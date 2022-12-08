@@ -1,7 +1,7 @@
 {
-  "name": "sznm.dev",
+  "name": "codenime.xyz",
   "private": true,
-  "description": "Agustinus Nathaniel's dev site",
+  "description": "Site with next js",
   "version": "1.18.2",
   "author": "sozonome",
   "scripts": {
@@ -85,9 +85,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sozonome/sznm.dev"
+    "url": "https://github.com/4ndrexyz/4ndrexyz.github.io"
   },
   "bugs": {
-    "url": "https://github.com/sozonome/sznm.dev/issues"
+    "url": "https://github.com/4ndrexyz/4ndrexyz.github.io/issues"
   }
 }

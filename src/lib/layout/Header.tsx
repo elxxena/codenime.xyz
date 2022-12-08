@@ -37,7 +37,7 @@ const Header = () => {
         <Flex layerStyle="layoutBlock" alignItems="center">
           <Link href="/">
             <Heading size="md" fontWeight="medium" fontSize={["md", "xl"]}>
-              sznm.dev
+              codenime
             </Heading>
           </Link>
 
