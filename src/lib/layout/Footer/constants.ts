@@ -6,7 +6,7 @@ export const links: Array<Pick<FooterLinkProps, "label" | "url">> = [
     url: "https://codenime.xyz",
   },
   {
-    label: "about",
+    label: "About",
     url: "https://codenime/about",
   },
   {
