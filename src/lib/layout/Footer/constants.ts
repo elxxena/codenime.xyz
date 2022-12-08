@@ -2,20 +2,16 @@ import type { FooterLinkProps } from "./types";
 
 export const links: Array<Pick<FooterLinkProps, "label" | "url">> = [
   {
-    label: "Base",
-    url: "https://base.sznm.dev",
+    label: "Home",
+    url: "https://codenime.xyz",
   },
   {
-    label: "Bookmarks",
-    url: "https://base.sznm.dev/bookmarks",
+    label: "about",
+    url: "https://codenime/about",
   },
   {
-    label: "Templates",
-    url: "https://github.com/sozonome?tab=repositories&q=starter-template&type=&language=&sort=stargazers",
-  },
-  {
-    label: "Timeline",
-    url: "https://poly.sznm.dev",
+    label: "Github",
+    url: "https://github.com/4ndrexyz",
   },
   {
     label: "Analytics",

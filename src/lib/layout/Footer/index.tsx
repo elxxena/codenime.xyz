@@ -37,13 +37,13 @@ const Footer = () => {
         ))}
       </Grid>
       <Text fontSize={["xs", "sm"]} color="gray">
-        &copy; 2020 - {new Date().getFullYear()}{" "}
+        &copy; 2022 - {new Date().getFullYear()}{" "}
         <Link
-          href="https://agustinusnathaniel.com"
+          href="codenime.xyz"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Agustinus Nathaniel
+          codenime
         </Link>
       </Text>
     </Stack>

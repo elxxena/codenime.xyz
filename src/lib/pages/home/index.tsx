@@ -9,8 +9,8 @@ const Home = ({ highlightedProjects, recentPosts }: HomeProps) => {
   return (
     <Box marginTop={-24}>
       <HeroSection />
-      <ProjectsSection data={highlightedProjects} />
       <PostsSection data={recentPosts} />
+      <ProjectsSection data={highlightedProjects} />
     </Box>
   );
 };
