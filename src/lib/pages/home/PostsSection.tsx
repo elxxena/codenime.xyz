@@ -22,7 +22,7 @@ const PostsSection = ({ data }: PostsSectionProps) => {
   return (
     <Stack as="section" spacing={4}>
       <Heading size="lg" marginBottom={2}>
-       Artikel Terbaru
+        Recent Posts
       </Heading>
 
       <Grid gap={8}>
@@ -41,7 +41,7 @@ const PostsSection = ({ data }: PostsSectionProps) => {
           fontFamily="heading"
           onClick={handleClickViewAllPosts}
         >
-          Lihat semua artikel
+          view all posts
         </Button>
       </Box>
     </Stack>
