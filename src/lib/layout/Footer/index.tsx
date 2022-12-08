@@ -39,7 +39,7 @@ const Footer = () => {
       <Text fontSize={["xs", "sm"]} color="gray">
         &copy; 2022 - {new Date().getFullYear()}{" "}
         <Link
-          href="codenime.xyz"
+          href="https://www.codenime.xyz"
           target="_blank"
           rel="noopener noreferrer"
         >
