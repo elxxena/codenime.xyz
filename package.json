@@ -3,7 +3,7 @@
   "private": true,
   "description": "Site with next js",
   "version": "1.18.2",
-  "author": "sozonome",
+  "author": "4ndrexyz",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
