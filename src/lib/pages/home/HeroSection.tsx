@@ -10,15 +10,7 @@ const HeroSection = () => {
         alignSelf={["none", "center"]}
       >
         <Heading as="h1" size="xl" paddingBottom={11}>
-         <script>
-          var h =  (new Date()).getHours();
-          var m = (new Date()).getMinutes();
-          var s = (new Date()).getSeconds();
-          if (h >= 4 && h < 10) document.writeln("Selamat pagi,");
-          if (h >= 10 && h < 15) document.writeln("Selamat siang,");
-          if (h >= 15 && h < 18) document.writeln("Selamat sore,");
-          if (h >= 18 || h < 4) document.writeln("Selamat malam,");  
-         </script>
+          こんにちは 👋 
         </Heading>
         <Text fontSize={{ base: "md", md: "xl" }} color="description">
           Selamat datang di website saya, Semoga harimu menyenangkan!
