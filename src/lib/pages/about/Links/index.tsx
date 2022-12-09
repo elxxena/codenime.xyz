@@ -14,7 +14,7 @@ const Links = () => {
   return (
     <MotionBox marginY={4} {...wrapperAnimationProps}>
       <Text fontStyle="italic" color="gray">
-        1.01 ^365 = 37.7
+        Paradox - Algorithm - Lo-Fi
       </Text>
 
       <MotionFlex

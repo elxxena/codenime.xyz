@@ -27,12 +27,12 @@ const Content = () => {
       initial="before"
       animate="after"
     >
-      <Heading size="lg">👋 Hi, how are you?</Heading>
+      <Heading size="lg">About me 🤔</Heading>
 
       <Text {...{ ...textProps, textColor }}>
-        I&apos;m Nathan, currently working as a Frontend Engineer. Most of the
-        time I work with React - TypeScript and Flutter - Dart. Sometimes I make
-        fun projects and share it here.
+        Nama saya Andre Kusuma Firmansah biasa dipanggil Andre, 
+        Saya merupakan lulusan dari SMK Negeri 9 Kota Semarang jurusan Informatika. 
+        memiliki kemampuan dalam bidang desain dan coding. 
       </Text>
 
       <Text {...{ ...textProps, textColor }}>
