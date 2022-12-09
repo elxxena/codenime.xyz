@@ -15,7 +15,6 @@ const HeroSection = () => {
         <Text fontSize={{ base: "md", md: "xl" }} color="description">
           Selamat datang di website saya, Semoga harimu menyenangkan!
         </Text>
-        
       </Box>
     </Box>
   );

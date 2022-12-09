@@ -4,6 +4,7 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
+  FaDribbble,
   FaMedium,
   FaProductHunt,
   FaTwitter,
@@ -15,47 +16,32 @@ import type { MotionLinkProps } from "./types";
 export const socialLinks: Array<MotionLinkProps> = [
   {
     platformName: "GitHub",
-    url: "https://github.com/sozonome",
+    url: "https://github.com/4ndrexyz",
     icon: FaGithub,
   },
   {
     platformName: "LinkedIn",
-    url: "https://linkedin.com/in/agustinusnathaniel",
+    url: "www.linkedin.com/in/4ndrexyz",
     icon: FaLinkedin,
   },
   {
     platformName: "Twitter",
-    url: "https://twitter.com/sozonome",
+    url: "https://twitter.com/andrexyz_",
     icon: FaTwitter,
   },
   {
     platformName: "Instagram",
-    url: "https://instagram.com/sozonome",
+    url: "https://instagram.com/4ndrexyz",
     icon: FaInstagram,
   },
   {
-    platformName: "YouTube",
-    url: "https://youtube.com/channel/UCJnYMGIHtQ8yInuq4Pc2Ttg",
-    icon: FaYoutube,
-  },
-  {
-    platformName: "dev.to",
-    url: "https://dev.to/sozonome",
-    icon: FaDev,
-  },
-  {
-    platformName: "Medium",
-    url: "https://medium.com/@agustinusnathaniel",
-    icon: FaMedium,
-  },
-  {
-    platformName: "ProductHunt",
-    url: "https://www.producthunt.com/@sozonome/made",
-    icon: FaProductHunt,
+    platformName: "Dribbble",
+    url: "https://dribbble.com/designandrefirmansah",
+    icon: FaDribbble,
   },
   {
     platformName: "e-mail",
-    url: "mailto:hello@sznm.dev?cc=agustinusnathaniel228@gmail.com",
+    url: "mailto:andrekusuma388@gmail.com?cc=Andre Firmansah",
     icon: FaEnvelope,
   },
 ];
