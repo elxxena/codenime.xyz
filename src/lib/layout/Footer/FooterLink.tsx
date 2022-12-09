@@ -6,7 +6,7 @@ const FooterLink = ({ label, url, onClick }: FooterLinkProps) => {
   return (
     <Link
       href={url}
-      isExternal
+      isInternal
       fontWeight="semibold"
       fontFamily="heading"
       onClick={onClick}

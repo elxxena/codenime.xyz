@@ -14,7 +14,7 @@ export const links: Array<Pick<FooterLinkProps, "label" | "url">> = [
     url: "/blog",
   },
   {
-    label: "Github",
-    url: "https://github.com/4ndrexyz",
+    label: "Projects",
+    url: "/projects",
   },
 ];
