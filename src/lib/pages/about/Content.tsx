@@ -36,16 +36,7 @@ const Content = () => {
       </Text>
 
       <Text {...{ ...textProps, textColor }}>
-        Outside working, I like to travel and{" "}
-        <Link
-          href="https://instagram.com/agustinusnathaniel"
-          isExternal
-          onClick={handleClickInstagramLink}
-        >
-          <Text as="span" fontWeight="extrabold">
-            capture moments.
-          </Text>
-        </Link>
+        Dan saya juga suka anime 🤤
       </Text>
     </MotionBox>
   );
