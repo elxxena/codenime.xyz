@@ -36,7 +36,17 @@ const Content = () => {
       </Text>
 
       <Text {...{ ...textProps, textColor }}>
-        Dan saya juga suka anime 🤤
+        Dan saya juga suka anime 🤤, jangan lupa Follow {" "}
+        <Link
+          href="https://instagram.com/4ndrexyz_"
+          isExternal
+          onClick={handleClickInstagramLink}
+        >
+          <Text as="span" fontWeight="extrabold">
+            Instagram
+          </Text>
+          saya.
+        </Link>
       </Text>
     </MotionBox>
   );
