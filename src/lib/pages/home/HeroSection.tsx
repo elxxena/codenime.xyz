@@ -10,10 +10,10 @@ const HeroSection = () => {
         alignSelf={["none", "center"]}
       >
         <Heading as="h1" size="xl" paddingBottom={11}>
-        いらっしゃいませ.
+           いらっしゃいませ.
         </Heading>
         <Text fontSize={{ base: "md", md: "xl" }} color="description">
-        Selamat datang di website saya, Semoga harimu menyenangkan!
+           Selamat datang di website saya, Semoga harimu menyenangkan!
         </Text>
       </Box>
     </Box>
