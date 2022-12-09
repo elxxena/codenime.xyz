@@ -12,6 +12,7 @@ const HeroSection = () => {
         <Heading as="h1" size="xl" paddingBottom={11}>
           いらっしゃいませ.
         </Heading>
+        
         <Text fontSize={{ base: "md", md: "xl" }} color="description">
           Selamat datang di website saya, Semoga harimu menyenangkan!
         </Text>
