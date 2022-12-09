@@ -2,19 +2,19 @@ import type { DefaultSeoProps } from "next-seo";
 
 // https://github.com/garmeeh/next-seo#nextseo-options
 export const defaultSEOConfig: DefaultSeoProps = {
-  title: "Agustinus Nathaniel - Digital Crafter",
-  titleTemplate: "%s | sozonome",
-  defaultTitle: "sozonome | Agustinus Nathaniel - Digital Crafter",
-  description: "Agustinus Nathaniel's Dev Site | sozonome",
+  title: "codenime",
+  titleTemplate: "%s | 4ndrexyz",
+  defaultTitle: "4ndrexyz",
+  description: "codenime",
   canonical: "https://sznm.dev",
   openGraph: {
-    url: "https://sznm.dev",
-    title: "sozonome | Digital Crafter",
-    description: "Agustinus Nathaniel's Dev Site",
+    url: "https://codenime.xyz",
+    title: "codenime",
+    description: "4ndrexyz",
     images: [
       {
-        url: "https://og.sznm.dev/api/generate?heading=sozonome&text=https://sznm.dev",
-        alt: "sznm.dev og-image",
+        url: "https://og.sznm.dev/api/generate?heading=Andre%20Firmansah&text=codenime.xyz",
+        alt: "codenime.xyz og-image",
       },
     ],
     site_name: "sozonome",
