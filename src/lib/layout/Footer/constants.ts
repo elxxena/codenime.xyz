@@ -3,18 +3,18 @@ import type { FooterLinkProps } from "./types";
 export const links: Array<Pick<FooterLinkProps, "label" | "url">> = [
   {
     label: "Home",
-    url: "https://codenime.xyz",
+    url: "/",
   },
   {
     label: "About",
-    url: "https://codenime/about",
+    url: "/about",
+  },
+  {
+    label: "Blog",
+    url: "/blog",
   },
   {
     label: "Github",
     url: "https://github.com/4ndrexyz",
-  },
-  {
-    label: "Analytics",
-    url: "https://umami.sznm.dev/share/Zl0vE0h0/sznm.dev",
-  },
+  }
 ];

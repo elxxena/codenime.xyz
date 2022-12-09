@@ -1,16 +1,16 @@
 import { UMAMI_SRC, UMAMI_WEBSITE_ID } from "lib/constants/umami";
 
-const APP_NAME = "sznm.dev";
+const APP_NAME = "codenime.xyz";
 
 const DocumentMeta = () => {
   return (
     <>
-      <link rel="icon" href="/avataaars.svg" />
+      <link rel="icon" href="/avatar.png" />
       <link
         rel="alternate"
         type="application/rss+xml"
-        title="RSS feed for sozonome's blog posts"
-        href="https://sznm.dev/rss.xml"
+        title="RSS codenime"
+        href="https://codenime.xyz/rss.xml"
       />
 
       <meta name="application-name" content={APP_NAME} />
@@ -29,7 +29,7 @@ const DocumentMeta = () => {
         defer
         data-website-id={UMAMI_WEBSITE_ID}
         src={UMAMI_SRC}
-        data-domains="sznm.dev"
+        data-domains="codenime.xyz"
       />
     </>
   );
