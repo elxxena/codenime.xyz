@@ -1,14 +1,10 @@
 import {
-  FaDev,
   FaEnvelope,
   FaGithub,
   FaInstagram,
   FaLinkedin,
   FaDribbble,
-  FaMedium,
-  FaProductHunt,
   FaTwitter,
-  FaYoutube,
 } from "react-icons/fa";
 
 import type { MotionLinkProps } from "./types";
