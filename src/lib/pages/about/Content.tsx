@@ -30,7 +30,8 @@ const Content = () => {
       <Heading size="lg">About me 🤔</Heading>
 
       <Text {...{ ...textProps, textColor }}>
-        Nama saya Andre Kusuma Firmansah biasa dipanggil Andre, Saya merupakan lulusan dari SMK Negeri 9 Kota Semarang jurusan Informatika. Memiliki kemampuan dalam bidang desain dan coding. 
+        Nama saya Andre Kusuma Firmansah biasa dipanggil Andre, Saya merupakan lulusan dari SMK Negeri 9 Kota Semarang jurusan Informatika. Memiliki
+        kemampuan dalam bidang desain dan coding. 
       </Text>
 
       <Text {...{ ...textProps, textColor }}>
