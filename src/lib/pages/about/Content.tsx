@@ -45,9 +45,7 @@ const Content = () => {
             Instagram
           </Text>
         </Link>
-        <Text as="span">
-          saya.
-        </Text>
+        {" "} saya.
       </Text>
     </MotionBox>
   );
