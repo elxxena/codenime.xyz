@@ -13,8 +13,8 @@ const About = () => {
         title="About"
         canonical={`${baseUrl}/about`}
         openGraph={{
-          title: "About | sozonome",
-          description: "About sznm.dev page",
+          title: "About",
+          description: "About 4ndrexyz page",
         }}
       />
 
