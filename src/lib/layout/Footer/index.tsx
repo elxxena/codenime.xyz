@@ -43,17 +43,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          codenime
-        </Link>
-      </Text>
-      <Text color="gray">
-        Tema di buat oleh {" "} 
-        <Link
-          href="https://www.sznm.dev"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          sznm.dev
+          made with &heart; codenime
         </Link>
       </Text>
     </Stack>
