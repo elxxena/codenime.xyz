@@ -60,7 +60,7 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
         <Heading as="h1" size="xl">
           Blog Posts
         </Heading>
-        <Text color="description">Semua ada disini</Text>
+        <Text color="description">Semua yang kamu cari ada disini</Text>
       </Grid>
 
       <BlogPostSearch keyword={keyword} onChange={handleChangeKeyword()} />

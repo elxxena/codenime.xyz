@@ -32,12 +32,12 @@ const ProjectListBottomNav = () => {
       </Button>
 
       <Tooltip
-        label="to view the detailed portfolio page, you must ask for the password through contacting me first, as I build the portfolio page for the one who really have interest to work with me"
+        label="Kamu akan diarahkan ke Dribbble"
         aria-label="portfolio view tooltip"
       >
         <Button
           as="a"
-          href="https://prtfl.sznm.dev"
+          href="https://dribbble.com/designandrefirmansah"
           target="_blank"
           width="full"
           onClick={handleClickPortfolioPage}

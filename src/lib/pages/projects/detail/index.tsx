@@ -16,12 +16,12 @@ const ProjectDetail = ({ projectData }: ProjectDetailProps) => {
         title={projectData.title}
         canonical={`${baseUrl}/projects/${projectData.id}`}
         openGraph={{
-          title: `${projectData.title} | sozonome`,
+          title: `${projectData.title} | codenime`,
           images: [
             {
               url: sznmOgImage({
                 heading: projectData.title,
-                text: "https://sznm.dev",
+                text: "https://codenime.xyz",
               }),
               alt: `${projectData.title} | sozonome og-image`,
             },
