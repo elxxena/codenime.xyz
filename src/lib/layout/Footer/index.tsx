@@ -43,7 +43,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          made with &heart; codenime
+          made with &heart; by codenime
         </Link>
       </Text>
     </Stack>
