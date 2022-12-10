@@ -4,7 +4,7 @@ projectLink: https://xtarter.sznm.dev
 # repoLink: https://github.com/sozonome/spoker
 description: Home of my starter templates
 date: "2022-05-19"
-icon: "/app_icons/nextarter-chakra.svg"
+icon: "/app_icons/wa-bot.svg"
 featured: true
 stacks: 
   - js_logo
