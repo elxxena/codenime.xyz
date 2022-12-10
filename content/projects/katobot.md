@@ -9,6 +9,5 @@ highlight: true
 featured: true
 sznmApps: true
 stacks:
-  - js
-  - heroku
+  - js_logo
 ---
