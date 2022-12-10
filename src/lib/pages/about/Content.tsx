@@ -45,7 +45,9 @@ const Content = () => {
             Instagram  
           </Text>
         </Link>
-          saya.
+        <Text as="span" fontWeight="extrabold">
+          saya.  
+        </Text>
       </Text>
     </MotionBox>
   );
