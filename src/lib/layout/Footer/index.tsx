@@ -46,7 +46,7 @@ const Footer = () => {
           codenime
         </Link>
       </Text>
-      <Text fontSize={["xs", "sm"]} color="gray">
+      <Text color="gray">
         Tema di buat oleh {" "} 
         <Link
           href="https://www.sznm.dev"
