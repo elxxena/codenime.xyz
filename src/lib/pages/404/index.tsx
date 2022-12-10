@@ -19,22 +19,17 @@ const Page404 = () => {
         animate={{ y: 20 }}
         transition={{ repeat: Infinity, duration: 2, repeatType: "reverse" }}
       >
-        <Image src="/404 Error-rafiki.svg" alt="Error404" />
+        <Image src="/404.png" alt="Error404" />
       </MotionBox>
-      <Text textAlign="center" fontSize="xs">
-        <ChakraLink href="https://stories.freepik.com/web" isExternal>
-          Illustration by Freepik Stories
-        </ChakraLink>
-      </Text>
 
       <Box marginY={4}>
         <Heading textAlign="center" fontSize="3xl" marginBottom={2}>
-          Seems like you&apos;re lost.
+          Kamu ada dimana?
         </Heading>
 
         <Box textAlign="center">
           <Button as={Link} href="/" backgroundColor="buttonBackground">
-            Let&apos;s Head Back
+            Kembali ke halaman utama
           </Button>
         </Box>
       </Box>
