@@ -46,6 +46,16 @@ const Footer = () => {
           codenime
         </Link>
       </Text>
+      <Text fontSize={["xs", "sm"]} color="gray">
+        Tema di buat oleh {" "} 
+        <Link
+          href="https://www.sznm.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          sznm.dev
+        </Link>
+      </Text>
     </Stack>
   );
 };
