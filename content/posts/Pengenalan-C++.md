@@ -67,7 +67,7 @@ Setelah program (file `.exe` atau `.o`) terbentuk, file tersebut dapat dieksekus
 
 Untuk menjalankan sebuah program pastinya kita harus menulis struktur kodenya terlebih dahulu, setelah itu baru kita menjalankanya _(Run)_, di bahasa C++ juga memiliki struktur kode untuk menjalankan sebuah program, berikut adalah struktur C++
 
-```C++
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -91,7 +91,7 @@ Jika kita lihat sekilas memang strukturnya hampir sama dengan bahasa C 🤔, itu
 
 Berikut adalah struktur program bahasa C
 
-```C
+```c
 #include <stdio.h>
 
 int main(void){
