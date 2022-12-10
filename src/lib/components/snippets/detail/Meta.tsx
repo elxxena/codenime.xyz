@@ -11,7 +11,7 @@ type SnippetDetailMetaProps = {
 const SnippetDetailMeta = ({ data }: SnippetDetailMetaProps) => {
   const ogImage = sznmOgImage({
     heading: data.title,
-    text: "Snippets | https://sznm.dev",
+    text: "Snippets | https://codenime.xyz",
   });
   const pageUrl = `${baseUrl}/snippets/${data.id}`;
 
@@ -20,7 +20,7 @@ const SnippetDetailMeta = ({ data }: SnippetDetailMetaProps) => {
       title={data.title}
       canonical={pageUrl}
       openGraph={{
-        title: `sozonome | ${data.title}`,
+        title: `4ndrexyz | ${data.title}`,
         images: [
           {
             url: ogImage,

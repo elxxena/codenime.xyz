@@ -42,7 +42,7 @@ const ProjectListBottomNav = () => {
           width="full"
           onClick={handleClickPortfolioPage}
         >
-          see more detailed portfolio
+          see more portfolio
         </Button>
       </Tooltip>
     </Grid>
