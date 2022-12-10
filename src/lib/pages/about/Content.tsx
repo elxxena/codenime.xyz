@@ -35,14 +35,14 @@ const Content = () => {
       </Text>
 
       <Text {...{ ...textProps, textColor }}>
-        Jangan lupa Follow {" "}
+        Jangan lupa Follow {" "} 
         <Link
           href="https://instagram.com/4ndrexyz_"
           isExternal
           onClick={handleClickInstagramLink}
         >
           <Text as="span" fontWeight="extrabold">
-            Instagram
+            Instagram 
           </Text>
         </Link>
          saya.
