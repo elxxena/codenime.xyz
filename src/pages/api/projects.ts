@@ -11,7 +11,7 @@ const projects = async () => {
       name: title,
       description,
       url: projectLink,
-      icon: `https://sznm.dev${icon}`,
+      icon: `https://codenime.xyz${icon}`,
     })
   );
 
