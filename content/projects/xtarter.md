@@ -7,6 +7,5 @@ date: "2022-05-19"
 icon: "/app_icons/nextarter-chakra.svg"
 featured: true
 stacks: 
-  - nextjs
-  - chakra-ui
+  - js_logo
 ---
