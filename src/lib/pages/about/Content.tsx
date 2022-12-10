@@ -35,7 +35,7 @@ const Content = () => {
       </Text>
 
       <Text {...{ ...textProps, textColor }}>
-        Jangan lupa Follow {" "} 
+        Jangan lupa Follow {" "} saya.
         <Link
           href="https://instagram.com/4ndrexyz_"
           isExternal
@@ -45,7 +45,6 @@ const Content = () => {
             Instagram 
           </Text>
         </Link>
-         saya.
       </Text>
     </MotionBox>
   );
