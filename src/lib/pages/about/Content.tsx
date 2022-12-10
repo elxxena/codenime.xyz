@@ -42,11 +42,11 @@ const Content = () => {
           onClick={handleClickInstagramLink}
         >
           <Text as="span" fontWeight="extrabold">
-            Instagram  
+            Instagram
           </Text>
         </Link>
-        <Text as="span" fontWeight="extrabold">
-          saya.  
+        <Text as="span">
+          saya.
         </Text>
       </Text>
     </MotionBox>
