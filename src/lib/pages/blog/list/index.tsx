@@ -43,14 +43,14 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
         title="Blog Posts"
         canonical={`${baseUrl}/blog`}
         openGraph={{
-          title: "Blog Posts | sozonome",
+          title: "Blog Posts",
           images: [
             {
               url: sznmOgImage({
-                heading: "Blog Posts | sozonome",
-                text: "https://sznm.dev",
+                heading: "Blog Posts",
+                text: "https://codenime.xyz",
               }),
-              alt: "Blog Posts | sozonome og-image",
+              alt: "Blog Posts",
             },
           ],
         }}
@@ -60,7 +60,7 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
         <Heading as="h1" size="xl">
           Blog Posts
         </Heading>
-        <Text color="description">Just some writings</Text>
+        <Text color="description">Semua ada disini</Text>
       </Grid>
 
       <BlogPostSearch keyword={keyword} onChange={handleChangeKeyword()} />

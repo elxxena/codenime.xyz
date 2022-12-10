@@ -48,11 +48,11 @@ const BlogPost = ({ postData }: BlogPostProps) => {
 
       <Box marginY={12}>
         <Giscus
-          repo="sozonome/sznm.dev"
-          repoId="MDEwOlJlcG9zaXRvcnkyNjY2Njk3MDg="
+          repo="4ndrexyz/codenime.xyz"
+          repoId="R_kgDOIkmTag"
           mapping="pathname"
           category="Blog Post"
-          categoryId="DIC_kwDOD-UOjM4B_fhR"
+          categoryId="DIC_kwDOIkmTas4CTANZ"
           reactionsEnabled="1"
           theme={giscusTheme}
           emitMetadata="0"

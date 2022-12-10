@@ -11,7 +11,7 @@ type BlogPostMetaProps = {
 const BlogPostMeta = ({ postData }: BlogPostMetaProps) => {
   const ogImage = sznmOgImage({
     heading: postData.title,
-    text: "Blog Post | https://sznm.dev",
+    text: "Blog Post | https://codenime.xyz",
   });
   const pageUrl = `${baseUrl}/blog/${postData.id}`;
 
@@ -21,7 +21,7 @@ const BlogPostMeta = ({ postData }: BlogPostMetaProps) => {
         title={postData.title}
         canonical={pageUrl}
         openGraph={{
-          title: `${postData.title} | sozonome`,
+          title: `${postData.title} | codenime`,
           url: pageUrl,
           images: [
             {
@@ -35,12 +35,12 @@ const BlogPostMeta = ({ postData }: BlogPostMetaProps) => {
       <ArticleJsonLd
         type="Blog"
         url={`${baseUrl}/blog/${postData.id}`}
-        title={`${postData.title} | sozonome`}
+        title={`${postData.title} | codenime`}
         images={[]}
         datePublished={new Date(postData.date).toISOString()}
         dateModified={new Date(postData.date).toISOString()}
-        authorName="Agustinus Nathaniel"
-        description={`A blog post by Agustinus Nathaniel explaining about ${postData.title}`}
+        authorName="4ndrexyz"
+        description={`Postingan ini menjelaskan tentang ${postData.title}`}
       />
     </>
   );

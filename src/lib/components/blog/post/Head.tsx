@@ -19,7 +19,7 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
           </Heading>
           <Link href="/about" isExternal>
             <Text color="gray" fontSize="sm">
-              Agustinus Nathaniel
+              4ndrexyz
             </Text>
           </Link>
 
