@@ -37,13 +37,13 @@ const Footer = () => {
         ))}
       </Grid>
       <Text fontSize={["xs", "sm"]} color="gray">
-        &copy; 2022 - {new Date().getFullYear()}{" "}
+        &copy; 2022 - {new Date().getFullYear()} made with &#9829; by {" "}
         <Link
           href="https://www.codenime.xyz"
           target="_blank"
           rel="noopener noreferrer"
         >
-          made with &heart; by codenime
+          codenime
         </Link>
       </Text>
     </Stack>
