@@ -23,7 +23,7 @@ const ProjectDetail = ({ projectData }: ProjectDetailProps) => {
                 heading: projectData.title,
                 text: "https://codenime.xyz",
               }),
-              alt: `${projectData.title} | sozonome og-image`,
+              alt: `${projectData.title} | codenime og-image`,
             },
           ],
         }}

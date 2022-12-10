@@ -54,14 +54,14 @@ const ProjectList = ({ featuredProjects }: ProjectListProps) => {
         title="Projects"
         canonical={`${baseUrl}/projects`}
         openGraph={{
-          title: "Projects | sozonome",
+          title: "Projects | codenime",
           images: [
             {
               url: sznmOgImage({
                 heading: "Projects",
-                text: "https://sznm.dev",
+                text: "https://codenime.xyz",
               }),
-              alt: "Projects | sozonome og-image",
+              alt: "Projects | codenime og-image",
             },
           ],
         }}

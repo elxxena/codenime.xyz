@@ -38,7 +38,7 @@ const OtherProjects = ({ otherProjects }: OtherProjectsProps) => {
                 heading: "Other Projects",
                 text: "https://codenime.xyz",
               }),
-              alt: "Other Projects | sozonome og-image",
+              alt: "Other Projects | codenime og-image",
             },
           ],
         }}
