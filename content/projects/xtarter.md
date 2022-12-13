@@ -1,8 +1,8 @@
 ---
-title: xtarter
+title: QR Code
 projectLink: https://qr-code.codenime.xyz/
 # repoLink: https://github.com/sozonome/spoker
-description: Home of my starter templates
+description: Simple QR Code Generator with react
 date: "2022-12-13"
 icon: "/app_icons/qr-code.png"
 featured: true
