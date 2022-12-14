@@ -1,9 +1,9 @@
 ---
-title: tungpajak
-projectLink: https://tungpajak.sznm.dev
-description: My personal tax calculator / simulator.
-date: "2022-03-12"
-icon: "/app_icons/book.svg"
+title: Home
+projectLink: https://home.codenime.xyz/
+description: My personal website.
+date: "2022-12-14"
+icon: "/app_icons/home.png"
 stacks: 
   - nextjs
   - chakra-ui
