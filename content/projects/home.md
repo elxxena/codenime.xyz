@@ -9,4 +9,7 @@ stacks:
   - nextjs
   - chakra-ui
 ---
-<!-- featured untuk menampilkan project -->
+<!-- 
+featured : true 
+highlight: true 
+-->
