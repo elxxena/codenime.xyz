@@ -1,93 +1,61 @@
 import * as React from 'react';
-import { Flex, Avatar, Box, Container } from '@chakra-ui/react';
-import { MotionBox, MotionFlex } from './motion';
-import Header from './header';
-
-const ANIMATION_DURATION = 0.5;
+import { Container, chakra, Stack, Text, Button, Box } from '@chakra-ui/react';
+// Here we have used react-icons package for the icons
+import { FaGithub } from 'react-icons/fa';
 
 const HeroSection = () => {
-  
-  const color = 'blue.400';
-
   return (
-    <Container maxW="5xl" p={{ base: 5, md: 12 }}>
-      <Flex direction={['column', 'column', 'row']}>
-        <MotionBox
-          opacity="0"
-          initial={{
-            translateX: -150,
-            opacity: 0
-          }}
-          animate={{
-            translateX: 0,
-            opacity: 1,
-            transition: {
-              duration: ANIMATION_DURATION
-            }
-          }}
-          m="auto"
-          mb={[16, 16, 'auto']}
+    <Container p={{ base: 8, sm: 14 }}>
+      <Stack direction="column" spacing={6} alignItems="center">
+        <Box py={2} px={3} bg="teal" w="max-content" color="white" rounded="md" fontSize="sm">
+          <Stack direction={{ base: 'column', sm: 'row' }}>
+            <Text fontWeight="bold">Ready, Set, Build! 🚀</Text>
+            <Text>Join the Hackathon!</Text>
+          </Stack>
+        </Box>
+        <chakra.h1
+          fontSize={{ base: '4xl', sm: '5xl' }}
+          fontWeight="bold"
+          textAlign="center"
+          maxW="600px"
         >
-          <MotionBox whileHover={{ scale: 1.2 }} rounded="full" shadow="lg">
-            <Avatar
-              size="2xl"
-              showBorder={true}
-              borderColor={color}
-              src={'https://avatars2.githubusercontent.com/u/37842853?v=4'}
-            />
-          </MotionBox>
-        </MotionBox>
-        <MotionFlex
-          position="relative"
-          ml={['auto', 'auto', 16]}
-          m={['auto', 'initial']}
-          w={['90%', '85%', '80%']}
-          maxW="800px"
-          opacity="0"
-          justify="center"
-          direction="column"
-          initial={{
-            opacity: 0,
-            translateX: 150
-          }}
-          animate={{
-            opacity: 1,
-            translateX: 0,
-            transition: {
-              duration: ANIMATION_DURATION
-            }
-          }}
+          Create accessible React apps{' '}
+          <chakra.span color="teal" bg="linear-gradient(transparent 50%, #83e9e7 50%)">
+            with speed
+          </chakra.span>
+        </chakra.h1>
+        <Text maxW="550px" fontSize="xl" textAlign="center" color="gray.500">
+          Chakra UI is a simple, modular and accessible component library that gives you the
+          building blocks you need to build your React applications.
+        </Text>
+        <Stack
+          direction={{ base: 'column', sm: 'row' }}
+          w={{ base: '100%', sm: 'auto' }}
+          spacing={5}
         >
-          <Box position="relative">
-            <MotionBox whileHover={{ translateY: -5 }} width="max-content">
-              <Header underlineColor={color} mt={0} cursor="pointer" width="max-content">
-                Hey!
-              </Header>
-            </MotionBox>
-          </Box>
-          <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-            My name is{' '}
-            <Box as="strong" fontWeight="600">
-              Ahmad
-            </Box>{' '}
-            and I&apos;m a{' '}
-            <Box as="span" whiteSpace="nowrap">
-              Full Stack Developer and
-            </Box>{' '}
-            <Box as="span" whiteSpace="nowrap">
-              an open source lover&nbsp;
-            </Box>
-            from{' '}
-            <Box as="span" whiteSpace="nowrap">
-              Pakistan 🇵🇰
-            </Box>
-          </Box>
-          <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            This is my digital garden, where I write about the things I&apos;m working on and share
-            what I&apos;ve learned. 😊
-          </Box>
-        </MotionFlex>
-      </Flex>
+          <Button
+            colorScheme="teal"
+            variant="outline"
+            rounded="md"
+            size="lg"
+            height="3.5rem"
+            fontSize="1.2rem"
+          >
+            Get Started
+          </Button>
+          <Button
+            leftIcon={<FaGithub />}
+            colorScheme="gray"
+            variant="outline"
+            rounded="md"
+            size="lg"
+            height="3.5rem"
+            fontSize="1.2rem"
+          >
+            Github
+          </Button>
+        </Stack>
+      </Stack>
     </Container>
   );
 };
