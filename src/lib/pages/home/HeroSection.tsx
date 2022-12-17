@@ -37,11 +37,11 @@ const HeroSection = () => {
             />
           </MotionBox>
         </MotionBox>
-        
+
         <MotionFlex>
           <Box position="relative">
             <MotionBox whileHover={{ translateY: -5 }} width="max-content">
-              <Header underlineColor={color} mt={0} cursor="pointer" width="max-content">
+              <Header underlineColor={color} cursor="pointer" width="max-content">
                 Hey!
               </Header>
             </MotionBox>
