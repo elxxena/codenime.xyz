@@ -3,14 +3,9 @@ import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
-import BlogPostCard from "lib/components/blog/BlogPostCard";
 import BlogPostPreview from "lib/components/blog/BlogPostPreview";
 import { EVENT_TYPE_NAVIGATE } from "lib/constants/tracking";
 import { trackEvent } from "lib/utils/trackEvent";
-import {
-  childAnimationProps,
-  staggerAnimationProps,
-} from "lib/constants/animation";
 
 export type PostsSectionProps = {
   data: Array<Blog>;
@@ -25,16 +20,14 @@ const PostsSection = ({ data }: PostsSectionProps) => {
   };
 
   return (
-    <Stack as="section" spacing={}>
+    <Stack as="section" spacing={1}>
       <Heading size="lg" marginBottom={2}>
         Recent Posts
       </Heading>
 
       <Grid gap={8}>
         {data.map((postData) => (
-          <BlogPostCard wrapperProps={childAnimationProps}
-          postData={postData}
-          key={postData.title} />
+          <BlogPostPreview postData={postData} key={postData.id} />
         ))}
       </Grid>
 
