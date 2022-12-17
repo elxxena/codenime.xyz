@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Flex } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, AspectRatio, Image } from "@chakra-ui/react";
 import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
 
@@ -8,6 +8,7 @@ import Twemoji from "lib/components/Twemoji";
 import { EVENT_TYPE_NAVIGATE } from "lib/constants/tracking";
 import { dateFormatLong } from "lib/utils/dateFormat";
 import { trackEvent } from "lib/utils/trackEvent";
+import { unsplashImg } from "lib/utils/unsplashImg";
 
 type BlogPostPreviewProps = {
   postData: Blog;
@@ -39,6 +40,20 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
           alignItems="center"
           width="100%"
         >
+          <AspectRatio
+            width="full"
+            ratio={3 / 1}
+            marginBottom={4}
+            boxShadow="lg"
+            borderRadius={{ base: 12, md: 24 }}
+          >
+            <Image
+              src={unsplashImg(postData.cover)}
+              fit="cover"
+              borderRadius={12}
+            />
+          </AspectRatio>
+          
           <Flex justifyContent="center" alignItems="center" flexBasis={["10%"]}>
             <Box boxSize="60%">
               <Twemoji emoji={postData.thumbnail ?? "📘"} />
