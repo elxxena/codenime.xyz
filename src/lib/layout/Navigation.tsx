@@ -43,11 +43,6 @@ const navigations: NavItemProps[] = [
     icon: FaHome,
   },
   {
-    href: "/projects",
-    label: "Projects",
-    icon: FaRocket,
-  },
-  {
     href: "/blog",
     label: "Blog",
     icon: FaFeatherAlt,

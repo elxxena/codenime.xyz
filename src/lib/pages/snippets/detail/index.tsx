@@ -33,14 +33,14 @@ const SnippetDetail = ({ data }: SnippetDetailProps) => {
 
       <Box marginY={12}>
         <Giscus
-          repo="sozonome/sznm.dev"
-          repoId="MDEwOlJlcG9zaXRvcnkyNjY2Njk3MDg="
-          mapping="pathname"
-          category="Snippets"
-          categoryId="DIC_kwDOD-UOjM4CQX_7"
-          reactionsEnabled="1"
-          theme={giscusTheme}
-          emitMetadata="0"
+         repo="4ndrexyz/codenime.xyz"
+         repoId="R_kgDOIkmTag"
+         mapping="pathname"
+         category="Snippets"
+         categoryId="DIC_kwDOIkmTas4CTANZ"
+         reactionsEnabled="1"
+         theme={giscusTheme}
+         emitMetadata="0"
         />
       </Box>
     </Box>

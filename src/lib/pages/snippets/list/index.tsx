@@ -36,7 +36,7 @@ const SnippetList = ({ snippets }: SnippetListProps) => {
       <Grid gap={2}>
         <Heading>Snippets</Heading>
         <Text color="description">
-          A collection of my personal snippets I use throughout my projects
+          Koleksi Snippet Saya
         </Text>
       </Grid>
 
