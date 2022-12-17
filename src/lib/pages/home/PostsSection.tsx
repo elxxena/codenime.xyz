@@ -1,6 +1,5 @@
 import { Heading, Box, Text, Grid } from "@chakra-ui/react";
 import debounce from "lodash-es/debounce";
-import { NextSeo } from "next-seo";
 import dynamic from "next/dynamic";
 import * as React from "react";
 
