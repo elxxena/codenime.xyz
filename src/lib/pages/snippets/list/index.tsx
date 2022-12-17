@@ -20,14 +20,14 @@ const SnippetList = ({ snippets }: SnippetListProps) => {
         title="Snippets"
         canonical={`${baseUrl}/snippets`}
         openGraph={{
-          title: "Snippets | sozonome",
+          title: "Snippets | 4ndrexyz",
           images: [
             {
               url: sznmOgImage({
-                heading: "Snippets | sozonome",
-                text: "https://sznm.dev",
+                heading: "Snippets | 4ndrexyz",
+                text: "https://codenime.xyz",
               }),
-              alt: "Snippets | sozonome og-image",
+              alt: "Snippets | 4ndrexyz og-image",
             },
           ],
         }}
@@ -36,7 +36,7 @@ const SnippetList = ({ snippets }: SnippetListProps) => {
       <Grid gap={2}>
         <Heading>Snippets</Heading>
         <Text color="description">
-          Koleksi Snippet Saya
+          Ini adalah koleksi Snippet saya
         </Text>
       </Grid>
 
