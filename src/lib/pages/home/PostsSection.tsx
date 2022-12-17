@@ -3,6 +3,7 @@ import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
+import BlogPostCard from "lib/components/blog/BlogPostCard";
 import BlogPostPreview from "lib/components/blog/BlogPostPreview";
 import { EVENT_TYPE_NAVIGATE } from "lib/constants/tracking";
 import { trackEvent } from "lib/utils/trackEvent";
@@ -20,14 +21,14 @@ const PostsSection = ({ data }: PostsSectionProps) => {
   };
 
   return (
-    <Stack as="section" spacing={1}>
+    <Stack as="section" spacing={}>
       <Heading size="lg" marginBottom={2}>
         Recent Posts
       </Heading>
 
       <Grid gap={8}>
         {data.map((postData) => (
-          <BlogPostPreview postData={postData} key={postData.id} />
+          <BlogPostCard postData={postData} key={postData.id} />
         ))}
       </Grid>
 

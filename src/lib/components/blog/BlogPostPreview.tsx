@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Flex, AspectRatio, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex } from "@chakra-ui/react";
 import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
 
@@ -8,14 +8,13 @@ import Twemoji from "lib/components/Twemoji";
 import { EVENT_TYPE_NAVIGATE } from "lib/constants/tracking";
 import { dateFormatLong } from "lib/utils/dateFormat";
 import { trackEvent } from "lib/utils/trackEvent";
-import { unsplashImg } from "lib/utils/unsplashImg";
 
-type BlogPostCardProps = {
+type BlogPostPreviewProps = {
   postData: Blog;
   wrapperProps?: MotionBoxProps;
 };
 
-const BlogPostPreview = ({ postData, wrapperProps }: BlogPostCardProps) => {
+const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
   const handleClickBlogPost = () => {
     trackEvent({
       eventName: `Blog Post: ${postData.title}`,
@@ -32,45 +31,28 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostCardProps) => {
           transform: "scale(1.03, 1.03)",
         }}
       >
-        <Box
+        <Flex
           as={Link}
           href={`/blog/${postData.id}`}
           onClick={handleClickBlogPost}
+          flexWrap="wrap"
+          alignItems="center"
+          width="100%"
         >
-          <AspectRatio
-            width="full"
-            ratio={3 / 1}
-            marginBottom={4}
-            boxShadow="lg"
-            borderRadius={{ base: 12, md: 24 }}
-          >
-            <Image
-              src={unsplashImg(postData.cover)}
-              fit="cover"
-              borderRadius={12}
-            />
-          </AspectRatio>
-
-          <Flex flexWrap="wrap" alignItems="center" width="100%">
-            <Flex
-              justifyContent="center"
-              alignItems="center"
-              flexBasis={["10%"]}
-            >
-              <Box boxSize="60%">
-                <Twemoji emoji={postData.thumbnail ?? "📘"} />
-              </Box>
-            </Flex>
-            <Box flexBasis={["90%"]} paddingLeft={[11, 22]}>
-              <Heading size="md" marginBottom={2}>
-                {postData.title}
-              </Heading>
-              <Text fontSize="xs" color="description">
-                {dateFormatLong(postData.date)} - {postData.readTime?.text}
-              </Text>
+          <Flex justifyContent="center" alignItems="center" flexBasis={["10%"]}>
+            <Box boxSize="60%">
+              <Twemoji emoji={postData.thumbnail ?? "📘"} />
             </Box>
           </Flex>
-        </Box>
+          <Box flexBasis={["90%"]} paddingLeft={[11, 22]}>
+            <Heading size="lg" marginBottom={2}>
+              {postData.title}
+            </Heading>
+            <Text fontSize="sm">
+              {dateFormatLong(postData.date)} - {postData.readTime?.text}
+            </Text>
+          </Box>
+        </Flex>
       </Box>
     </MotionBox>
   );

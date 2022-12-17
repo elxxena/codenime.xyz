@@ -80,6 +80,7 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
           />
         ))}
       </MotionGrid>
+      
     </Box>
   );
 };
