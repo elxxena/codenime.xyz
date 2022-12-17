@@ -1,26 +1,16 @@
 import { Box, Heading, Text, Link } from "@chakra-ui/react";
 import { baseUrl } from "lib/constants/baseUrl";
 import { NextSeo } from "next-seo";
-import ProjectDetailWrapper from "lib/components/projects/detail";
-import { sznmOgImage } from "lib/utils/sznmOgImage";
 const PrivacyPolicy = () => {
   return (
     <Box as="article">
       <Box>
       <NextSeo
-        title= "Privacy Policy"
-        canonical={`${baseUrl}/privacy/`}
+        title="Privacy Policy"
+        canonical={`${baseUrl}/privacy`}
         openGraph={{
-          title: `Privacy Policy | codenime`,
-          images: [
-            {
-              url: sznmOgImage({
-                heading: "Privacy Policy",
-                text: "https://codenime.xyz",
-              }),
-              alt: `Privacy Policy | codenime og-image`,
-            },
-          ],
+          title: "Privacy Policy",
+          description: "Privacy Policy Codenime",
         }}
       />
 
