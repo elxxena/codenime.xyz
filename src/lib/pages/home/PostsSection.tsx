@@ -2,16 +2,10 @@ import { Box, Button, Grid, Heading, Stack } from "@chakra-ui/react";
 import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
-import {
-  childAnimationProps,
-  staggerAnimationProps,
-} from "lib/constants/animation";
 
-import MotionGrid from "lib/components/motion/MotionGrid";
-import BlogPostPreview from "lib/components/blog/BlogPostCard";
+import BlogPostPreview from "lib/components/blog/BlogPostPreview";
 import { EVENT_TYPE_NAVIGATE } from "lib/constants/tracking";
 import { trackEvent } from "lib/utils/trackEvent";
-import BlogPostCard from "lib/components/blog/BlogPostCard";
 
 export type PostsSectionProps = {
   data: Array<Blog>;
@@ -31,20 +25,11 @@ const PostsSection = ({ data }: PostsSectionProps) => {
         Recent Posts
       </Heading>
 
-      <MotionGrid
-        gap={16}
-        marginY={12}
-        gridTemplateColumns={{ md: "repeat(2, 1fr)" }}
-        {...staggerAnimationProps}
-      >
+      <Grid gap={8}>
         {data.map((postData) => (
-           <BlogPostCard
-           wrapperProps={childAnimationProps}
-           postData={postData}
-           key={postData.title}
-         />
+          <BlogPostPreview postData={postData} key={postData.id} />
         ))}
-      </MotionGrid>
+      </Grid>
 
       <Box>
         <Button
