@@ -7,6 +7,10 @@ import BlogPostCard from "lib/components/blog/BlogPostCard";
 import BlogPostPreview from "lib/components/blog/BlogPostPreview";
 import { EVENT_TYPE_NAVIGATE } from "lib/constants/tracking";
 import { trackEvent } from "lib/utils/trackEvent";
+import {
+  childAnimationProps,
+  staggerAnimationProps,
+} from "lib/constants/animation";
 
 export type PostsSectionProps = {
   data: Array<Blog>;
@@ -28,7 +32,9 @@ const PostsSection = ({ data }: PostsSectionProps) => {
 
       <Grid gap={8}>
         {data.map((postData) => (
-          <BlogPostCard postData={postData} key={postData.id} />
+          <BlogPostCard wrapperProps={childAnimationProps}
+          postData={postData}
+          key={postData.title} />
         ))}
       </Grid>
 
