@@ -44,7 +44,6 @@ const HeroSection = () => {
           w={['90%', '85%', '80%']}
           maxW="800px"
           opacity="0"
-          justify="center"
           direction="column"
           initial={{
             opacity: 0,
