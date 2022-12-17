@@ -37,26 +37,8 @@ const HeroSection = () => {
             />
           </MotionBox>
         </MotionBox>
-        <MotionFlex
-          position="relative"
-          ml={['auto', 'auto', 16]}
-          m={['auto', 'initial']}
-          w={['90%', '85%', '80%']}
-          maxW="800px"
-          opacity="0"
-          direction="column"
-          initial={{
-            opacity: 0,
-            translateX: 150
-          }}
-          animate={{
-            opacity: 1,
-            translateX: 0,
-            transition: {
-              duration: ANIMATION_DURATION
-            }
-          }}
-        >
+        
+        <MotionFlex>
           <Box position="relative">
             <MotionBox whileHover={{ translateY: -5 }} width="max-content">
               <Header underlineColor={color} mt={0} cursor="pointer" width="max-content">
