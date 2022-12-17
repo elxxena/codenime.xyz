@@ -20,7 +20,7 @@ const PostsSection = ({ data }: PostsSectionProps) => {
   };
 
   return (
-    <Stack as="section" spacing={4}>
+    <Stack as="section" spacing={1}>
       <Heading size="lg" marginBottom={2}>
         Recent Posts
       </Heading>

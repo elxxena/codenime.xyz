@@ -18,9 +18,9 @@ const generateRssItem = async (post: Blog) => {
 
 export const generateRss = async (posts: Array<Blog>): Promise<string> => {
   const feed = new RSS({
-    title: "sozonome's blog",
-    site_url: "https://sznm.dev",
-    feed_url: "https://sznm.dev/rss.xml",
+    title: "codenime",
+    site_url: "https://codenime.xyz",
+    feed_url: "https://codenime.xyz/rss.xml",
   });
 
   // eslint-disable-next-line no-restricted-syntax
@@ -29,11 +29,11 @@ export const generateRss = async (posts: Array<Blog>): Promise<string> => {
       const item: any = await generateRssItem(post);
       feed.item({
         title: item.title,
-        guid: `https://sznm.dev/blog/${item.id}`,
-        url: `https://sznm.dev/blog/${item.id}`,
+        guid: `https://codenime.xyz/blog/${item.id}`,
+        url: `https://codenime.xyz/blog/${item.id}`,
         date: item.date,
         description: "",
-        author: "sozonome",
+        author: "4ndrexyz",
         custom_elements: [{ "content:encoded": item.contentHtml }],
       });
     }
