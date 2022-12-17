@@ -7,6 +7,7 @@ import {
   staggerAnimationProps,
 } from "lib/constants/animation";
 
+import MotionGrid from "lib/components/motion/MotionGrid";
 import BlogPostPreview from "lib/components/blog/BlogPostCard";
 import { EVENT_TYPE_NAVIGATE } from "lib/constants/tracking";
 import { trackEvent } from "lib/utils/trackEvent";
@@ -30,7 +31,12 @@ const PostsSection = ({ data }: PostsSectionProps) => {
         Recent Posts
       </Heading>
 
-      <Grid gap={8}>
+      <MotionGrid
+        gap={16}
+        marginY={12}
+        gridTemplateColumns={{ md: "repeat(2, 1fr)" }}
+        {...staggerAnimationProps}
+      >
         {data.map((postData) => (
            <BlogPostCard
            wrapperProps={childAnimationProps}
@@ -38,7 +44,7 @@ const PostsSection = ({ data }: PostsSectionProps) => {
            key={postData.title}
          />
         ))}
-      </Grid>
+      </MotionGrid>
 
       <Box>
         <Button
