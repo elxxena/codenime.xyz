@@ -9,9 +9,9 @@ const PrivacyPolicy = () => {
       <Box>
       <NextSeo
         title= "Privacy Policy"
-        canonical={`${baseUrl}/projects/`}
+        canonical={`${baseUrl}/privacy/`}
         openGraph={{
-          title: `${baseUrl} | codenime`,
+          title: `Privacy Policy | codenime`,
           images: [
             {
               url: sznmOgImage({
