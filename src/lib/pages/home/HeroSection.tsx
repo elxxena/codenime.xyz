@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { Flex, Avatar, Box, Container } from '@chakra-ui/react';
-import MotionBox from 'lib/components/motion/MotionBox';
-import MotionFlex from 'lib/components/motion/MotionFlex';
-import Header from 'lib/layout/Header';
+import { MotionBox, MotionFlex } from './motion';
+import Header from './header';
 
 const ANIMATION_DURATION = 0.5;
 
 const HeroSection = () => {
+  
   const color = 'blue.400';
 
   return (
@@ -37,11 +37,30 @@ const HeroSection = () => {
             />
           </MotionBox>
         </MotionBox>
-        
-        <MotionFlex>
+        <MotionFlex
+          position="relative"
+          ml={['auto', 'auto', 16]}
+          m={['auto', 'initial']}
+          w={['90%', '85%', '80%']}
+          maxW="800px"
+          opacity="0"
+          justify="center"
+          direction="column"
+          initial={{
+            opacity: 0,
+            translateX: 150
+          }}
+          animate={{
+            opacity: 1,
+            translateX: 0,
+            transition: {
+              duration: ANIMATION_DURATION
+            }
+          }}
+        >
           <Box position="relative">
             <MotionBox whileHover={{ translateY: -5 }} width="max-content">
-              <Header cursor="pointer" width="max-content">
+              <Header underlineColor={color} mt={0} cursor="pointer" width="max-content">
                 Hey!
               </Header>
             </MotionBox>
