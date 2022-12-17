@@ -1,11 +1,11 @@
 import { UMAMI_SRC, UMAMI_WEBSITE_ID } from "lib/constants/umami";
 
-const APP_NAME = "codenime.xyz";
+const APP_NAME = "codenime";
 
 const DocumentMeta = () => {
   return (
     <>
-      <link rel="icon" href="/avatar.jpeg" />
+      <link rel="icon" href="/codenime_avatar.jpg" />
       <link
         rel="alternate"
         type="application/rss+xml"
