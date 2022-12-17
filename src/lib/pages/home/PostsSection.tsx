@@ -1,4 +1,4 @@
-import { Heading, Box, Text, Grid } from "@chakra-ui/react";
+import { Heading, Box, Text, Grid, Button } from "@chakra-ui/react";
 import debounce from "lodash-es/debounce";
 import { NextSeo } from "next-seo";
 import dynamic from "next/dynamic";
@@ -10,6 +10,14 @@ import {
   childAnimationProps,
   staggerAnimationProps,
 } from "lib/constants/animation";
+import { baseUrl } from "lib/constants/baseUrl";
+import { sznmOgImage } from "lib/utils/sznmOgImage";
+
+
+import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
+import { EVENT_TYPE_NAVIGATE } from "lib/constants/tracking";
+import { trackEvent } from "lib/utils/trackEvent";
 
 import type { BlogPostListProps } from "lib/pages/blog/list/types";
 
@@ -20,8 +28,14 @@ const BlogPostSearch = dynamic(
   }
 );
 
-const PostsSection = ({ allPostsData }: BlogPostListProps) => {
+const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
   const [keyword, setKeyword] = React.useState<string>("");
+  const handleClickViewAllPosts = () => {
+    trackEvent({
+      eventName: "Home: View All Posts",
+      eventData: { type: EVENT_TYPE_NAVIGATE },
+    });
+  };
 
   const filteredPosts = allPostsData.filter((post) =>
     post.title.toLowerCase().includes(keyword.toLowerCase())
@@ -57,11 +71,29 @@ const PostsSection = ({ allPostsData }: BlogPostListProps) => {
           />
         ))}
       </MotionGrid>
-      
+            
+      <Box>
+        <Button
+          as={Link}
+          href="/blog"
+          rightIcon={<FaArrowRight />}
+          paddingX={0}
+          variant="ghost"
+          fontFamily="heading"
+          onClick={handleClickViewAllPosts}
+        >
+          view all posts
+        </Button>
+      </Box>
+
     </Box>
   );
 };
 
-export default PostsSection;
+export default BlogPostList;
+
+
+
+
 
 
