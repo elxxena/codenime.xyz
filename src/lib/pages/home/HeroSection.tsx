@@ -16,7 +16,7 @@ const HeroSection = () => {
           Codenime 
         </Heading>
         <Text maxW="500px" fontSize="lg" textAlign="center" color="gray.500">
-          Tempat bagi kamu yang ingin belajar Bahasa Pemrograman
+          Tempat bagi kamu yang ingin belajar <br /> Bahasa Pemrograman
         </Text>
         <HStack spacing={5}>
           <Link href='https://www.getrevue.co/profile/codenime' isExternal>
