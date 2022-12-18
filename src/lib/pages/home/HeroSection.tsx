@@ -1,29 +1,24 @@
-import { Box, Heading, Text, Flex, Image } from "@chakra-ui/react";
+import * as React from 'react';
+import { Container, Heading, Stack, HStack, Text, Button, Image } from '@chakra-ui/react';
 
 const HeroSection = () => {
   return (
-    <Box height="90vh" alignItems="center" display="grid">
-      <Box
-        verticalAlign="center"
-        width={["100%", "80%", "60%"]}
-        marginTop={[8, 0]}
-        alignSelf={["none", "center"]}
-      >
-        <Heading as="h1" size="xl" paddingBottom={11}>
-          Selamat Datang 👋
+    <Container maxW="7xl" p={4}>
+      <Stack direction="column" spacing={6} alignItems="center" mt={8} mb={16}>
+        <Heading as="h1" fontSize="4xl" fontWeight="bold" textAlign="center" maxW="600px">
+          We're on a mission to make <br /> building UIs more accessible
         </Heading>
-        <Text fontSize={{ base: "md", md: "xl" }} color="description">
-          Semoga harimu menyenangkan !
+        <Text maxW="500px" fontSize="lg" textAlign="center" color="gray.500">
+          Our mission is to empower anyone to build UIs, faster. We're reducing the entry barrier,
+          making design skills accessible.
         </Text>
-        <Flex flex={1}>
-        <Image
-          src={
-            'https://avatars.githubusercontent.com/4ndrexyz'
-          }
-        />
-      </Flex>
-      </Box>
-    </Box>
+        <HStack spacing={5}>
+          <Button colorScheme="teal" variant="solid" rounded="md" size="lg">
+            Get Started
+          </Button>
+        </HStack>
+      </Stack>
+    </Container>
   );
 };
 
