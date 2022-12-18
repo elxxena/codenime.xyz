@@ -4,6 +4,14 @@ import { Container, Heading, Stack, HStack, Text, Button, Image } from '@chakra-
 const HeroSection = () => {
   return (
     <Container maxW="7xl" p={4} mt={18}>
+      <Image
+        mb={5}
+        alignItems="center"
+        borderRadius='full'
+        boxSize='150px'
+        src='https://avatars.githubusercontent.com/4ndrexyz'
+        alt='4ndrexyz'
+      />
       <Stack direction="column" spacing={6} alignItems="center" mt={16} mb={16}>
         <Heading as="h1" fontSize="4xl" fontWeight="bold" textAlign="center" maxW="600px">
           We're on a mission to make <br /> building UIs more accessible
