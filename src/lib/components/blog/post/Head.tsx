@@ -1,4 +1,5 @@
-import { Box, Flex, Grid, Heading, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Link, Text, Tag } from "@chakra-ui/react";
+
 import type { Blog } from "contentlayer/generated";
 
 import ShareButtons from "lib/components/shared/ShareButtons";
@@ -17,6 +18,27 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
           <Heading as="h1" size="3xl" marginBottom={8}>
             {postData.title}
           </Heading>
+
+          <Flex gap={2}>
+            {postData.stacks?.map((stack) => (
+              <Text
+                borderWidth={1}
+                paddingY={0.5}
+                paddingX={2}
+                borderRadius={12}
+                transition="0.2s ease-out"
+                _groupHover={{
+                  color: "teal.400",
+                }}
+                fontSize="xs"
+                color="teal"
+                key={stack}
+              >
+                {stack}
+              </Text>
+            ))}
+          </Flex>
+
           <Link href="/about" isExternal>
             <Text color="gray" fontSize="sm">
               4ndrexyz
