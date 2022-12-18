@@ -15,50 +15,95 @@ const PrivacyPolicy = () => {
       />
 
         <Heading as="h1" size="2xl">
-          Codenime
+          Privacy Policy for Codenime
         </Heading>
-        <Heading as="h2" size="lg">
-          Privacy Policy
-        </Heading>
+
       </Box>
       <Box marginY={22}>
         <Text as="p">
-          We only ask for personal information when we truly need it to provide
-          a service to you. We collect it by fair and lawful means, with your
-          knowledge and consent. We also let you know why we’re collecting it
-          and how it will be used.
+        At codenime, accessible from https://codenime.xyz/, one of our main priorities is 
+        the privacy of our visitors. This Privacy Policy document contains types of 
+        information that is collected and recorded by codenime and how we use it
         </Text>
-        <Text as="p">
-          We only retain collected information for as long as necessary to
-          provide you with your requested service. What data we store, we’ll
-          protect within commercially acceptable means to prevent loss and
-          theft, as well as unauthorized access, disclosure, copying, use or
-          modification.
-        </Text>
-        <Text as="p">
-          We don’t share any personally identifying information publicly or with
-          third-parties, except when required to by law.
-        </Text>
-        <Text as="p">
-          Our app may link to external sites that are not operated by us. Please
-          be aware that we have no control over the content and practices of
-          these sites, and cannot accept responsibility or liability for their
-          respective privacy policies.
-        </Text>
-        <Text as="p">
-          You are free to refuse our request for your personal information, with
-          the understanding that we may be unable to provide you with some of
-          your desired services.
-        </Text>
-        <Text as="p">
-          Your continued use of our app will be regarded as acceptance of our
-          practices around privacy and personal information. If you have any
-          questions about how we handle user data and personal information, feel
-          free to contact us.
-        </Text>
-        <Text as="p">This policy is effective as of 29 May 2022.</Text>
-      </Box>
 
+        <Text as="p">
+        If you have additional questions or require more information about our Privacy Policy, 
+        do not hesitate to contact us.
+        </Text>
+
+        <Heading as="h3">
+          Log Files
+        </Heading>
+
+        <Text as="p">
+        codenime follows a standard procedure of using log files. 
+        These files log visitors when they visit websites. 
+        All hosting companies do this and a part of hosting services' analytics. 
+        The information collected by log files include internet protocol (IP) addresses, 
+        browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, 
+        and possibly the number of clicks. These are not linked to any information that is 
+        personally identifiable. The purpose of the information is for analyzing trends, 
+        administering the site, tracking users' movement on the website, and gathering demographic 
+        information. Our Privacy Policy was created with the help of the Privacy Policy Generator.
+        </Text>
+
+        <Heading as="h3">
+          Privacy Policies
+        </Heading>
+
+        <Text as="p">
+        You may consult this list to find the Privacy Policy for each of the advertising 
+        partners of codenime.
+        </Text>
+
+        <Text as="p">Third-party ad servers or ad networks uses technologies like cookies, 
+        JavaScript, or Web Beacons that are used in their respective advertisements and links 
+        that appear on codenime, which are sent directly to users' browser. 
+        They automatically receive your IP address when this occurs. 
+        These technologies are used to measure the effectiveness of their advertising 
+        campaigns and/or to personalize the advertising content that you see on websites 
+        that you visit.
+        </Text>
+
+
+        <Text as="p">
+        Note that codenime has no access to or control over these cookies that are used by third-party advertisers.
+        </Text>
+
+        <Heading as="h3">
+          Third Party Privacy Policies
+        </Heading>
+
+        <Text as="p">
+        codenime's Privacy Policy does not apply to other advertisers or websites. 
+        Thus, we are advising you to consult the respective Privacy Policies of these 
+        third-party ad servers for more detailed information. It may include their practices 
+        and instructions about how to opt-out of certain options.
+        </Text>
+
+        <Text as="p">
+        You can choose to disable cookies through your individual browser options. 
+        To know more detailed information about cookie management with specific web browsers, 
+        it can be found at the browsers' respective websites. What Are Cookies?
+        </Text>
+
+        <Heading as="h3">
+          Children's Information
+        </Heading>
+
+        <Text as="p">
+        Another part of our priority is adding protection for children while using the internet. 
+        We encourage parents and guardians to observe, participate in, and/or monitor and guide 
+        their online activity.
+        </Text>
+
+        <Text as="p">
+        codenime does not knowingly collect any Personal Identifiable Information from 
+        children under the age of 13. If you think that your child provided this kind 
+        of information on our website, we strongly encourage you to contact us immediately 
+        and we will do our best efforts to promptly remove such information from our records.
+        </Text>
+      </Box>
     </Box>
   );
 };
