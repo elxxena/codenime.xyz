@@ -12,14 +12,6 @@ const navigationMenus: CommandCollection = {
       id: "",
     },
     {
-      name: "Projects",
-      id: "projects",
-    },
-    {
-      name: "Other Projects",
-      id: "projects/other",
-    },
-    {
       name: "Blog",
       id: "blog",
     },
