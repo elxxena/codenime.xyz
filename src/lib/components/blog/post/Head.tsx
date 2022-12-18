@@ -20,7 +20,7 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
           </Heading>
 
           <Flex gap={2}>
-            {postData.stacks?.map((stack) => (
+            {postData.tags?.map((stack) => (
               <Text
                 borderWidth={1}
                 paddingY={0.5}
