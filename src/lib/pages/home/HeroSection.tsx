@@ -19,7 +19,7 @@ const HeroSection = () => {
           Tempat bagi kamu yang ingin belajar Bahasa Pemrograman
         </Text>
         <HStack spacing={5}>
-          <Link href='https://www.getrevue.co/profile/4ndrexyz' isExternal>
+          <Link href='https://www.getrevue.co/profile/codenime' isExternal>
             <Button colorScheme="teal" variant="solid" rounded="md" size="lg">
               Join Newsletter
             </Button>
