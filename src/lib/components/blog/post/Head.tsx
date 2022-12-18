@@ -21,7 +21,11 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
 
           <Flex gap={2}>
             {postData.tags?.map((stack) => (
-              <Tag key={stack}>
+              <Tag
+                paddingY={2}
+                paddingX={2}
+                key={stack}
+              >
                 {stack}
               </Tag>
             ))}
