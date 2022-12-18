@@ -3,7 +3,7 @@ import { Container, Heading, Stack, HStack, Text, Button, Image } from '@chakra-
 
 const HeroSection = () => {
   return (
-    <Container maxW="7xl" p={4} m={3}>
+    <Container maxW="7xl" p={4} mt={5}>
       <Stack direction="column" spacing={6} alignItems="center" mt={8} mb={16}>
         <Heading as="h1" fontSize="4xl" fontWeight="bold" textAlign="center" maxW="600px">
           We're on a mission to make <br /> building UIs more accessible
