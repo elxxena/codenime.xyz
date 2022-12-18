@@ -39,7 +39,7 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
         >
           <AspectRatio
             width="full"
-            ratio={4 / 3}
+            ratio={2 / 3}
             marginBottom={4}
             boxShadow="lg"
             borderRadius={{ base: 12, md: 24 }}
