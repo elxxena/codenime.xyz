@@ -6,7 +6,7 @@ const HeroSection = () => {
     <Container maxW="7xl" p={4} mt={18}>
       <Image
         mb={5}
-        alignItems="center"
+        align='center'
         borderRadius='full'
         boxSize='150px'
         src='https://avatars.githubusercontent.com/4ndrexyz'
