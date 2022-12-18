@@ -19,6 +19,19 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
             {postData.title}
           </Heading>
 
+          <Flex gap={2}>
+            {postData.tags?.map((stack) => (
+              <Tag
+                paddingY={0.5}
+                paddingX={2}
+                marginBottom={8}
+                key={stack}
+              >
+                {stack}
+              </Tag>
+            ))}
+          </Flex>
+
           <Link href="/about" isExternal>
             <Text color="gray" fontSize="sm">
               4ndrexyz
@@ -28,19 +41,6 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
           <Text fontSize="xs" color="gray">
             {dateFormatLong(postData.date)} - {postData.readTime?.text}
           </Text>
-
-          <Flex gap={2}>
-            {postData.tags?.map((stack) => (
-              <Tag
-                paddingY={3}
-                paddingX={2}
-                key={stack}
-              >
-                {stack}
-              </Tag>
-            ))}
-          </Flex>
-
         </Box>
 
         <Flex flexBasis={["20%"]}>
