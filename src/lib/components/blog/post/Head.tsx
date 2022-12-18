@@ -21,21 +21,9 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
 
           <Flex gap={2}>
             {postData.tags?.map((stack) => (
-              <Text
-                borderWidth={1}
-                paddingY={0.5}
-                paddingX={2}
-                borderRadius={12}
-                transition="0.2s ease-out"
-                _groupHover={{
-                  color: "teal.400",
-                }}
-                fontSize="xs"
-                color="teal"
-                key={stack}
-              >
+              <Tag key={stack}>
                 {stack}
-              </Text>
+              </Tag>
             ))}
           </Flex>
 
