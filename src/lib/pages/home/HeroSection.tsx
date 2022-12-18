@@ -9,14 +9,14 @@ const HeroSection = () => {
           mb={5}
           borderRadius='full'
           boxSize='150px'
-          src='https://avatars.githubusercontent.com/4ndrexyz'
+          src='https://i.postimg.cc/15VKNbqZ/avatar-codenime.jpg'
           alt='4ndrexyz'
         />
         <Heading as="h1" fontSize="4xl" fontWeight="bold" textAlign="center" maxW="600px">
-          Selamat Datang <br /> di Website Codenime
+          Codenime 
         </Heading>
         <Text maxW="500px" fontSize="lg" textAlign="center" color="gray.500">
-          Website untuk kamu yang tertarik ingin belajar ngoding
+          Tempat bagi kamu yang ingin belajar Bahasa Pemrograman
         </Text>
         <HStack spacing={5}>
           <Link href='https://www.getrevue.co/profile/4ndrexyz' isExternal>
