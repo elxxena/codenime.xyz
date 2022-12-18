@@ -1,6 +1,5 @@
-import type { Blog, Project } from "contentlayer/generated";
+import type { Blog } from "contentlayer/generated";
 
 export type HomeProps = {
-  highlightedProjects: Array<Project>;
   recentPosts: Array<Blog>;
 };

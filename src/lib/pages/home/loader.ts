@@ -9,7 +9,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
 
   return {
     props: {
-      recentPosts,
+      recentPosts
     },
   };
 };
