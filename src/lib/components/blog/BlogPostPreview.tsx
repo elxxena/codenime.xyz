@@ -42,7 +42,7 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
         >
           <AspectRatio
             width="full"
-            ratio={2 / 3}
+            ratio={3 / 2}
             marginBottom={4}
             boxShadow="lg"
             borderRadius={{ base: 12, md: 24 }}
