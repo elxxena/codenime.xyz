@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
       </Box>
       <Box marginY={22}>
         <Text as="p">
-        At codenime, accessible from https://codenime.xyz/, one of our main priorities is 
+        At codenime, accessible from <Link href="https://codenime.xyz/">https://codenime.xyz/</Link>, one of our main priorities is 
         the privacy of our visitors. This Privacy Policy document contains types of 
         information that is collected and recorded by codenime and how we use it
         </Text>
