@@ -21,7 +21,7 @@ const SpotifyListening = () => {
 
   return (
     <Tooltip
-      label="Song I'm currently listening to"
+      label="Currently playing on my Spotify"
       isDisabled={!data?.isPlaying}
     >
       <Flex
@@ -40,7 +40,7 @@ const SpotifyListening = () => {
         {data?.albumArtUrl && (
           <Image src={data.albumArtUrl} width={16} borderRadius={8} />
         )}
-        <Box>
+        <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
           <Text
             fontWeight="extrabold"
             fontSize="sm"
