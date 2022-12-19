@@ -1,4 +1,4 @@
-import { Box, Heading, Text, Flex, AspectRatio, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, Tag, Flex, AspectRatio, Image,Card, CardHeader, CardBody, CardFooter, Stack, Divider } from "@chakra-ui/react";
 import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
 
@@ -32,45 +32,31 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
           transform: "scale(1.03, 1.03)",
         }}
       >
-        <Box
-          as={Link}
-          href={`/blog/${postData.id}`}
-          onClick={handleClickBlogPost}
-        >
-          <AspectRatio
-            width="full"
-            ratio={2 / 1}
-            marginBottom={4}
-            boxShadow="lg"
-            borderRadius={{ base: 12, md: 24 }}
-          >
+        <Card maxW='sm' as={Link} href={`/blog/${postData.id}`} onClick={handleClickBlogPost}>
+          <CardBody>
             <Image
               src={unsplashImg(postData.cover)}
-              fit="cover"
-              borderRadius={12}
+              borderRadius='lg'
             />
-          </AspectRatio>
-
-          <Flex flexWrap="wrap" alignItems="center" width="100%">
-            <Flex
-              justifyContent="center"
-              alignItems="center"
-              flexBasis={["10%"]}
-            >
-              <Box boxSize="60%">
-                <Twemoji emoji={postData.thumbnail ?? "📘"} />
-              </Box>
-            </Flex>
-            <Box flexBasis={["90%"]} paddingLeft={[11, 22]}>
-              <Heading size="md" marginBottom={2}>
-                {postData.title}
-              </Heading>
+            <Stack mt='6' spacing='3'>
+              <Heading size="md" marginBottom={2}>{postData.title}</Heading>
               <Text fontSize="xs" color="description">
                 {dateFormatLong(postData.date)} - {postData.readTime?.text}
               </Text>
-            </Box>
-          </Flex>
-        </Box>
+            </Stack>
+          </CardBody>
+          <Divider />
+          <CardFooter>
+            {postData.tags?.map((stack) => (
+              <Tag
+                marginBottom={5}
+                key={stack}
+              >
+                {stack}
+              </Tag>
+            ))}
+          </CardFooter>
+        </Card>
       </Box>
     </MotionBox>
   );
