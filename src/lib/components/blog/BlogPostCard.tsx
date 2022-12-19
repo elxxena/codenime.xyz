@@ -1,12 +1,9 @@
-import { Box, Heading, Text, Flex, AspectRatio, ImageBox,
-  Image,
+import { Box, Text, Flex, AspectRatio, Image,
   Center,
   Heading,
-  Text,
   Stack,
   Avatar,
-  useColorModeValue, 
-  Flex, 
+  useColorModeValue,
   Tag, } from "@chakra-ui/react";
 import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
@@ -46,47 +43,48 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
           href={`/blog/${postData.id}`}
           onClick={handleClickBlogPost}
         >
-          <Box
-            h={'210px'}
-            bg={'gray.100'}
-            mt={-6}
-            mx={-6}
-            mb={6}
-            pos={'relative'}>
-              <Image
-                src={unsplashImg(postData.cover)}
-                objectFit='fill'
-              />
-           </Box>
+          <AspectRatio
+            width="full"
+            ratio={2 / 1}
+            marginBottom={4}
+            boxShadow="lg"
+            borderRadius={{ base: 12, md: 24 }}
+          >
+            <Image
+              src={unsplashImg(postData.cover)}
+              fit="cover"
+              borderRadius={12}
+            />
+          </AspectRatio>
 
-            <Stack>
-              <Flex gap={2}>
-                {postData.tags?.map((stack) => (
-                  <Tag
-                    key={stack}
-                  >
-                    {stack}
-                  </Tag>
-                ))}
-              </Flex>
+          <Stack>
+            <Flex gap={2}>
+              {postData.tags?.map((stack) => (
+                <Tag key={stack} >
+                  {stack}
+                </Tag>
+              ))}
+            </Flex>
 
-              <Heading
-                color={useColorModeValue('gray.700', 'white')}
-                fontSize={'2xl'}
-                fontFamily={'body'}>
-                {postData.title}
-              </Heading>
+            <Heading
+              color={useColorModeValue('gray.700', 'white')}
+              fontSize={'2xl'}
+              fontFamily={'body'}>
+              {postData.title}
+            </Heading>
 
-              <Text color={'gray.500'}>
-                {postData.description}
-              </Text>
-            </Stack>
+            <Text color={'gray.500'}>
+              {postData.description}
+            </Text>
+          </Stack>
+          
+          <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
 
-            <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-              <Avatar
-                src={'https://avatars.githubusercontent.com/4ndrexyz'}
-                name="4ndrexyz"
-              />
+            <Avatar
+              src={'https://avatars.githubusercontent.com/4ndrexyz'}
+              name="4ndrexyz"
+            />
+
             <Stack direction={'column'} spacing={0} fontSize={'sm'}>
               <Text fontWeight={600}>4ndrexyz</Text>
               <Text color={'gray.500'}>{dateFormatLong(postData.date)} · {postData.readTime?.text}</Text>
