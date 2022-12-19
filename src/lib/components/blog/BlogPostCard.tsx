@@ -59,13 +59,6 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
           </AspectRatio>
 
           <Stack>
-            <Flex gap={2}>
-              {postData.tags?.map((stack) => (
-                <Tag key={stack} >
-                  {stack}
-                </Tag>
-              ))}
-            </Flex>
 
             <Heading
               color={useColorModeValue('gray.700', 'white')}
@@ -77,6 +70,14 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
             <Text color={'gray.500'}>
               {postData.description}
             </Text>
+
+            <Flex gap={2}>
+              {postData.tags?.map((stack) => (
+                <Tag key={stack} >
+                  {stack}
+                </Tag>
+              ))}
+            </Flex>
           </Stack>
           
           <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
