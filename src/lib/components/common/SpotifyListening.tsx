@@ -37,7 +37,7 @@ const SpotifyListening = () => {
           fontFamily="heading"
           borderWidth="1px"
         >
-          <Icon as={FaSpotify} color="green.400" boxSize={8} fontSize="2xl" ml={4}/>
+          <Icon as={FaSpotify} color="green.400" boxSize={8} fontSize="2xl" ml={4} mr={4}/>
           {data?.albumArtUrl && (
             <Image src={data.albumArtUrl} width={16} borderRadius={8} />
           )}
