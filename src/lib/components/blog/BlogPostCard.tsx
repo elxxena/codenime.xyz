@@ -1,18 +1,17 @@
 import { 
   Box,
+  Image,
   Center,
   Heading,
   Text,
   Stack,
   Avatar,
   useColorModeValue, 
-  Image,
   Flex, 
   Tag,
 } from "@chakra-ui/react";
 import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
-
 import type { MotionBoxProps } from "lib/components/motion/MotionBox";
 import MotionBox from "lib/components/motion/MotionBox";
 import Twemoji from "lib/components/Twemoji";
@@ -56,7 +55,7 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
           pos={'relative'}>
           <Image
             src={unsplashImg(postData.cover)}
-            layout={'fill'}
+            objectFit='fill'
           />
         </Box>
         <Stack>
@@ -76,13 +75,13 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
             {postData.title}
           </Heading>
           <Text color={'gray.500'}>
-            {postData.desc}
+            {postData.description}
           </Text>
         </Stack>
         <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
           <Avatar
             src={'https://avatars.githubusercontent.com/4ndrexyz'}
-            alt={'Author'}
+            name="4ndrexyz"
           />
           <Stack direction={'column'} spacing={0} fontSize={'sm'}>
             <Text fontWeight={600}>4ndrexyz</Text>

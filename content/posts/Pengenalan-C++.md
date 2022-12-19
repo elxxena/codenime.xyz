@@ -4,7 +4,7 @@ date: "2022-12-10"
 cover: https://i.postimg.cc/Qtk245Nn/1-Pengenalan-C-01.jpg
 legacyID: "2022-12-10-pengenalan-c++"
 thumbnail: "💻"
-desc: "Halo, kali ini kita akan belajar mengenai bahasa pemrograman yang cukup populer yaitu bahasa C++, bagi kalian yang jurusan IT mungkin sudah tidak asing dengan bahasa ini."
+description: "Halo, kali ini kita akan belajar mengenai bahasa pemrograman yang cukup populer yaitu bahasa C++, bagi kalian yang jurusan IT mungkin sudah tidak asing dengan bahasa ini."
 published: true
 tags:
   - c++
