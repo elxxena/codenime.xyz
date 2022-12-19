@@ -20,42 +20,44 @@ const SpotifyListening = () => {
   }
 
   return (
-    <Tooltip
-      label="Currently playing on my Spotify"
-      isDisabled={!data?.isPlaying}
-    >
-      <Flex
-        as={data?.trackUrl ? Link : undefined}
-        href={data?.trackUrl}
-        target="_blank"
-        borderRadius={12}
-        maxWidth={300}
-        marginX="auto"
-        alignItems="center"
-        gridGap={2}
-        height={20}
-        fontFamily="heading"
+    <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+      <Tooltip
+        label="Currently playing on my Spotify"
+        isDisabled={!data?.isPlaying}
       >
-        <Icon as={FaSpotify} color="green.400" fontSize="2xl" />
-        {data?.albumArtUrl && (
-          <Image src={data.albumArtUrl} width={16} borderRadius={8} />
-        )}
-        <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-          <Text
-            fontWeight="extrabold"
-            fontSize="sm"
-            color={data?.isPlaying ? undefined : "gray"}
-          >
-            {data?.trackTitle ?? "Not Playing"}
-          </Text>
-          {data?.artist && (
-            <Text fontSize="xs" color="gray.500">
-              {data.artist}
-            </Text>
+        <Flex
+          as={data?.trackUrl ? Link : undefined}
+          href={data?.trackUrl}
+          target="_blank"
+          borderRadius={12}
+          maxWidth={300}
+          marginX="auto"
+          alignItems="center"
+          gridGap={2}
+          height={20}
+          fontFamily="heading"
+        >
+          <Icon as={FaSpotify} color="green.400" fontSize="2xl" />
+          {data?.albumArtUrl && (
+            <Image src={data.albumArtUrl} width={16} borderRadius={8} />
           )}
-        </Box>
-      </Flex>
-    </Tooltip>
+          <Box>
+            <Text
+              fontWeight="extrabold"
+              fontSize="sm"
+              color={data?.isPlaying ? undefined : "gray"}
+            >
+              {data?.trackTitle ?? "Not Playing"}
+            </Text>
+            {data?.artist && (
+              <Text fontSize="xs" color="gray.500">
+                {data.artist}
+              </Text>
+            )}
+          </Box>
+        </Flex>
+      </Tooltip>
+    </Box>
   );
 };
 
