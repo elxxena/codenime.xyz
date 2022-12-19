@@ -38,6 +38,8 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
           transform: "scale(1.03, 1.03)",
         }}
         borderWidth="1px"
+        borderRadius={12}
+        p={5}
       >
         <Box
           as={Link}
