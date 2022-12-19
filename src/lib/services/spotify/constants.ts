@@ -1,3 +1,3 @@
-export const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID ?? "";
-export const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET ?? "";
-export const SPOTIFY_REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN ?? "";
+export const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID ?? "5134fbaae11f4f32bcdc8a0c5b7229de";
+export const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET ?? "bef8c7af7f7843a09507dc4112e6f820";
+export const SPOTIFY_REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN ?? "AQC23c1YrUHKpooFImvg-5GlRN2ma1wUIkKI_92pBpwI_kGpS5Qp78RDyCFmKtM7zNnsCwNOdNQa2wTy49oLmvtXWbOmiwlMG96N8AYzECIeUCzSduUyhfsmiyBgvx4LnoQ";
