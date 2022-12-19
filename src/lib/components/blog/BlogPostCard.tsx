@@ -1,4 +1,15 @@
-import { Box, Heading, Text, Tag, Flex, AspectRatio, Image,Card, CardHeader, CardBody, CardFooter, Stack, Divider } from "@chakra-ui/react";
+import { 
+  Box,
+  Center,
+  Heading,
+  Text,
+  Stack,
+  Avatar,
+  useColorModeValue, 
+  Image,
+  Flex, 
+  Tag,
+} from "@chakra-ui/react";
 import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
 
@@ -26,37 +37,58 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
   return (
     <MotionBox {...wrapperProps}>
       <Box
-        width="100%"
-        transition="0.2s ease-out"
-        _hover={{
-          transform: "scale(1.03, 1.03)",
-        }}
-      >
-        <Card maxW='sm' as={Link} href={`/blog/${postData.id}`} onClick={handleClickBlogPost}>
-          <CardBody>
-            <Image
-              src={unsplashImg(postData.cover)}
-              borderRadius='lg'
-            />
-            <Stack mt='6' spacing='3'>
-              <Heading size="md" marginBottom={2}>{postData.title}</Heading>
-              <Text fontSize="xs" color="description">
-                {dateFormatLong(postData.date)} - {postData.readTime?.text}
-              </Text>
-            </Stack>
-          </CardBody>
-          <Divider />
-          <CardFooter>
+        maxW={'445px'}
+        w={'full'}
+        bg={useColorModeValue('white', 'gray.900')}
+        boxShadow={'2xl'}
+        rounded={'md'}
+        p={6}
+        overflow={'hidden'}
+        as={Link} href={`/blog/${postData.id}`} onClick={handleClickBlogPost}
+        >
+          
+        <Box
+          h={'210px'}
+          bg={'gray.100'}
+          mt={-6}
+          mx={-6}
+          mb={6}
+          pos={'relative'}>
+          <Image
+            src={unsplashImg(postData.cover)}
+            layout={'fill'}
+          />
+        </Box>
+        <Stack>
+          <Flex gap={2}>
             {postData.tags?.map((stack) => (
               <Tag
-                marginBottom={5}
                 key={stack}
               >
                 {stack}
               </Tag>
             ))}
-          </CardFooter>
-        </Card>
+          </Flex>
+          <Heading
+            color={useColorModeValue('gray.700', 'white')}
+            fontSize={'2xl'}
+            fontFamily={'body'}>
+            {postData.title}
+          </Heading>
+          <Text color={'gray.500'}>
+            {postData.desc}
+          </Text>
+        </Stack>
+        <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
+          <Avatar
+            src={'https://avatars.githubusercontent.com/4ndrexyz'}
+            alt={'Author'}
+          />
+          <Stack direction={'column'} spacing={0} fontSize={'sm'}>
+            <Text fontWeight={600}>4ndrexyz</Text>
+            <Text color={'gray.500'}>{dateFormatLong(postData.date)} · {postData.readTime?.text}</Text>
+          </Stack>
+        </Stack>
       </Box>
     </MotionBox>
   );
