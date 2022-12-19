@@ -20,7 +20,6 @@ const SpotifyListening = () => {
   }
 
   return (
-    <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
       <Tooltip
         label="Currently playing on my Spotify"
         isDisabled={!data?.isPlaying}
@@ -36,6 +35,8 @@ const SpotifyListening = () => {
           gridGap={2}
           height={20}
           fontFamily="heading"
+          borderWidth="1px"
+          alignItem="center"
         >
           <Icon as={FaSpotify} color="green.400" fontSize="2xl" />
           {data?.albumArtUrl && (
@@ -57,7 +58,6 @@ const SpotifyListening = () => {
           </Box>
         </Flex>
       </Tooltip>
-    </Box>
   );
 };
 
