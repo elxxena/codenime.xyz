@@ -33,7 +33,7 @@ const SpotifyListening = () => {
           marginX="auto"
           alignItems="center"
           gridGap={2}
-          height={25}
+          height={20}
           fontFamily="heading"
           borderWidth="1px"
         >
