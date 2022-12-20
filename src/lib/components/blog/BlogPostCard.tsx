@@ -1,4 +1,9 @@
-import { Box, Text, Flex, AspectRatio, Image,
+import { 
+  Box, 
+  Text, 
+  Flex, 
+  AspectRatio, 
+  Image,
   Center,
   Heading,
   Stack,

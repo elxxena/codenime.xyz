@@ -77,9 +77,8 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
           as={Link}
           href="/blog"
           rightIcon={<FaArrowRight />}
-          paddingX={0}
-          variant="ghost"
-          fontFamily="heading"
+          colorScheme='teal' 
+          variant='ghost'
           onClick={handleClickViewAllPosts}
         >
           view all posts
