@@ -43,14 +43,15 @@ const SnippetsList = ({ snippets }: SnippetListProps) => {
   return (
     <Box>
 
-      <Heading size="lg" marginBottom={2}>
+      <Heading size="lg" marginBottom={2} marginTop={4}>
         Recent Snippet
       </Heading>
 
       <MotionGrid
-       {...staggerAnimationProps}
-       gap={6}
-       gridTemplateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
+        gap={16}
+        marginY={12}
+        gridTemplateColumns={{ md: "repeat(2, 1fr)" }}
+        {...staggerAnimationProps}
      >
        {snippets.map((item) => (
          <MotionBox {...childAnimationProps} key={item.id}>

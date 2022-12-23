@@ -61,7 +61,7 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
           variant='ghost'
           onClick={handleClickViewAllPosts}
         >
-          view all posts
+          View all posts
         </Button>
       </Box>
 
