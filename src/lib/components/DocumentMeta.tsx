@@ -5,7 +5,7 @@ const APP_NAME = "codenime";
 const DocumentMeta = () => {
   return (
     <>
-      <link rel="icon" href="/avatar_codenime.jpg" />
+      <link rel="icon" href="/avatar_codenime.png" />
       <link
         rel="alternate"
         type="application/rss+xml"
