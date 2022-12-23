@@ -7,7 +7,7 @@ export const layerStyles: SystemStyleObjectRecord = {
     maxWidth: {
       base: "100vw",
       md: "85vw",
-      lg: "1080px",
+      lg: "800px",
     },
     paddingY: 4,
     paddingX: {
