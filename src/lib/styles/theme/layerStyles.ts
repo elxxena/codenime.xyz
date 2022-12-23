@@ -5,9 +5,9 @@ export const layerStyles: SystemStyleObjectRecord = {
     marginX: "auto",
     width: "full",
     maxWidth: {
-      base: "200vw",
+      base: "100vw",
       md: "85vw",
-      lg: "800px",
+      lg: "1080px",
     },
     paddingY: 4,
     paddingX: {
