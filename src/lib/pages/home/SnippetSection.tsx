@@ -41,9 +41,9 @@ const SnippetsList = ({ snippets }: SnippetListProps) => {
   );
 
   return (
-    <Box>
+    <Box mt={6}>
 
-      <Heading size="lg" marginBottom={2} marginTop={4}>
+      <Heading size="lg" marginBottom={2}>
         Recent Snippet
       </Heading>
 
