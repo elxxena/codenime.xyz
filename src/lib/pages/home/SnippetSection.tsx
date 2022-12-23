@@ -41,7 +41,7 @@ const SnippetsList = ({ snippets }: SnippetListProps) => {
   );
 
   return (
-    <Box mt={10}>
+    <Box mt={15}>
 
       <Heading size="lg" marginBottom={2}>
         Recent Snippet
@@ -50,7 +50,7 @@ const SnippetsList = ({ snippets }: SnippetListProps) => {
       <MotionGrid
         gap={16}
         marginY={12}
-        gridTemplateColumns={{ md: "repeat(3, 1fr)" }}
+        gridTemplateColumns={{ md: "repeat(2, 1fr)" }}
         {...staggerAnimationProps}
      >
        {snippets.map((item) => (
@@ -69,7 +69,7 @@ const SnippetsList = ({ snippets }: SnippetListProps) => {
           variant='ghost'
           onClick={handleClickViewAllPosts}
         >
-          View all Snippet
+          View All Snippet
         </Button>
       </Box>
 
