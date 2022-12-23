@@ -30,7 +30,7 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
   );
 
   return (
-    <Box>
+    <Box mb={10}>
 
       <Heading size="lg" marginBottom={2}>
         Recent Posts
