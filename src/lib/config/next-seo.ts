@@ -10,7 +10,7 @@ export const defaultSEOConfig: DefaultSeoProps = {
   openGraph: {
     url: "https://codenime.xyz",
     title: "codenime",
-    description: "By 4ndrexyz",
+    description: "Web For Dev",
     images: [
       {
         url: "https://og.sznm.dev/api/generate?heading=Andre%20Firmansah&text=codenime.xyz",

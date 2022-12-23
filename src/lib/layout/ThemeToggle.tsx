@@ -24,7 +24,7 @@ const ThemeToggle = () => {
   return (
     <Tooltip label="theme toggle">
       <IconButton 
-        aria-label="toggle theme mode"
+        aria-label="Switch Mode"
         icon={toggleIcon}
         onClick={handleClickToggle}
         backgroundColor="transparent"
