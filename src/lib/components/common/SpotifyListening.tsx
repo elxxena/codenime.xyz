@@ -29,7 +29,7 @@ const SpotifyListening = () => {
           href={data?.trackUrl}
           target="_blank"
           borderRadius={12}
-          maxWidth="auto"
+          maxWidth={800}
           marginX="auto"
           alignItems="center"
           gridGap={2}
@@ -37,11 +37,11 @@ const SpotifyListening = () => {
           fontFamily="heading"
           borderWidth="1px"
         >
-          <Icon as={FaSpotify} color="green.400" boxSize={8} fontSize="2xl" ml={4} mr={4}/>
+          <Icon as={FaSpotify} color="green.400" boxSize={8} fontSize="2xl" ml={4} mr={3}/>
           {data?.albumArtUrl && (
             <Image src={data.albumArtUrl} width={16} borderRadius={8} />
           )}
-          <Box mr={5}>
+          <Box>
             <Text
               fontWeight="extrabold"
               fontSize="sm"
