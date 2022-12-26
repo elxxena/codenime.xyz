@@ -5,7 +5,7 @@ export const Code: ComponentStyleConfig = {
     borderRadius: "0.25rem",
   },
   defaultProps: {
-    colorScheme: "messenger",
+    colorScheme: "gray",
     variant: "solid",
   },
 };
