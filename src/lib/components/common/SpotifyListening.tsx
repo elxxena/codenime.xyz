@@ -29,7 +29,7 @@ const SpotifyListening = () => {
           href={data?.trackUrl}
           target="_blank"
           borderRadius={12}
-          maxWidth={500}
+          maxWidth="auto"
           marginX="auto"
           alignItems="center"
           gridGap={2}
