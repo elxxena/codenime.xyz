@@ -42,7 +42,7 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
         _hover={{
           transform: "scale(1.03, 1.03)",
         }}
-        borderWidth="1px"
+        borderWidth="2px"
         borderRadius={12}
         p={5}
       >

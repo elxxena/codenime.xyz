@@ -50,7 +50,7 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
             <Image
               src={unsplashImg(postData.cover)}
               fit="cover"
-              borderRadius={12}
+              borderRadius={10}
             />
           </AspectRatio>
           
