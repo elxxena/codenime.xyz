@@ -41,7 +41,7 @@ const SpotifyListening = () => {
           {data?.albumArtUrl && (
             <Image src={data.albumArtUrl} width={16} borderRadius={8} />
           )}
-          <Box>
+          <Box mr={5}>
             <Text
               fontWeight="extrabold"
               fontSize="sm"
