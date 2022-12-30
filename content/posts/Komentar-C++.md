@@ -1,5 +1,5 @@
 ---
-title: Mengenal Komentar pada C++
+title: Komentar Pada C++
 date: "2022-12-30"
 cover: https://i.postimg.cc/Qtk245Nn/1-Pengenalan-C-01.jpg
 legacyID: "2022-12-30-komentar-cpp"
@@ -27,12 +27,14 @@ Tanda '//' digunakan untuk menuliskan komentar satu baris, komentar ini hanya te
 // Hai, ini adalah komentar satu baris
 ```
 
+
 lalu bagaimana jika komentar di atas ditulis seperti ini
 
 ```cpp
 // Hai, ini adalah
    komentar satu baris
 ```
+
 
 jika kita _compile_ program yang diatas maka akan terjadi kesalahan, karena teks "Komentar satu baris" tidak akan dianggap sebagai komentar, melainkan akan dianggap sebagai tiga buah variabel yang tidak dikenal.
 
@@ -42,11 +44,13 @@ Perlu di ingat tanda '//' tidak dapat digunakan untuk komentar yang bersifat sis
 int // Mendeklarasikan variabel berupa bilangan X;
 ```
 
+
 Penulisan kode diatas juga akan menyebabkan _error_ karena `x;` akan dianggap sebagai komentar **bukan varibel.** Dengan demikian, seharusnya kita menuliskan komentar seperti berikut.
 
 ```cpp
 int x; // Mendeklarasikan variabel berupa bilangan X;
 ```
+
 
 ### Menggunakan tanda '/* ... */'
 
@@ -59,17 +63,20 @@ Berbeda dengan tanda '//', tanda ini dapat digunakan untuk menuliskan komentar y
    banyaknya lebih dari satu baris */
 ```
 
+
 Dengan menggunakan tanda ini kita dapat menuliskan komentar kedalam sebuah kode progaram, seperti yang terlihat di kode berikut:
 
 ```cpp
 int /* Membuat nama variable siswa */ siswa;
 ```
 
+
 Namun perlu diperhatikan bahwa kita tidak dapat membuat komentar yang bersarang _(Nested Comment)_, misalnya
 
 ```cpp
 /* ini adalah /* contoh komentar */ bersarang */
 ```
+
 
 Apabila kita amati penulisan komentar di atas terlihat "Benar", namun apabila ditinjau dari sisi program, hal ini jelas "Salah".
 
