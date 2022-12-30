@@ -48,7 +48,7 @@ Penulisan kode diatas juga akan menyebabkan _error_ karena `x;` akan dianggap se
 int x; // Mendeklarasikan variabel berupa bilangan X;
 ```
 
-### Menggunakan tanda '/*...*/'
+### Menggunakan tanda '/* ... */'
 
 Berbeda dengan tanda '//', tanda ini dapat digunakan untuk menuliskan komentar yang banyaknya satu baris atau lebih. Komentar ini dimulai dengan tanda '/*' sampai ditemukan tanda '*/'
 

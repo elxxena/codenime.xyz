@@ -21,34 +21,9 @@ export const renderers: Options["components"] = {
     const language = match?.[1];
     const childrenValue = String(children).replace(/\n$/, "");
     const toastId = childrenValue.substring(0, 10);
-    const handleClickCopy = () => {
-      navigator.clipboard.writeText(childrenValue);
-      if (!toast.isActive(toastId)) {
-        toast({
-          id: toastId,
-          status: "success",
-          position: "top-right",
-          title: "Copied Success",
-          isClosable: true,
-        });
-      }
-    };
 
     return !inline && match ? (
       <Box width="100%">
-        <Flex alignItems="center">
-          <Button
-            marginLeft="auto"
-            colorScheme="green"
-            height={6}
-            padding={0}
-            fontSize={12}
-            textTransform="lowercase"
-            onClick={handleClickCopy}
-          >
-            Copy
-          </Button>
-        </Flex>
         <SyntaxHighlighter
           language={language}
           style={dracula}
