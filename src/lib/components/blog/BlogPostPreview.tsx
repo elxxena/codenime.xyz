@@ -54,11 +54,6 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
             />
           </AspectRatio>
           
-          <Flex justifyContent="center" alignItems="center" flexBasis={["10%"]}>
-            <Box boxSize="60%">
-              <Twemoji emoji={postData.thumbnail ?? "📘"} />
-            </Box>
-          </Flex>
           <Box flexBasis={["90%"]} paddingLeft={[11, 22]}>
             <Heading size="lg" marginBottom={2}>
               {postData.title}

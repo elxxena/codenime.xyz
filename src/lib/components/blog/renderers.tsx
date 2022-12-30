@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import type { Options } from "react-markdown/lib/ast-to-react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 import HeadingLink from "./HeadingLink";
 
@@ -28,7 +28,7 @@ export const renderers: Options["components"] = {
           id: toastId,
           status: "success",
           position: "top-right",
-          title: "Copied",
+          title: "Code Copied",
           isClosable: true,
         });
       }
@@ -52,7 +52,7 @@ export const renderers: Options["components"] = {
         </Flex>
         <SyntaxHighlighter
           language={language}
-          style={dracula}
+          style={atomDark}
           showLineNumbers={false}
         >
           {childrenValue}

@@ -40,12 +40,6 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
             {dateFormatLong(postData.date)} - {postData.readTime?.text}
           </Text>
         </Box>
-
-        <Flex flexBasis={["20%"]}>
-          <Box marginLeft="auto" width="60%">
-            <Twemoji emoji={postData.thumbnail ?? "📘"} />
-          </Box>
-        </Flex>
       </Flex>
 
       <ShareButtons title={`Check out this blog post: ${postData.title}`} />
