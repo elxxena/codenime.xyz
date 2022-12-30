@@ -37,7 +37,6 @@ export const renderers: Options["components"] = {
     return !inline && match ? (
       <Box width="100%">
         <Flex alignItems="center">
-          {language && <Code>{language}</Code>}
           <Button
             marginLeft="auto"
             colorScheme="green"
