@@ -8,10 +8,7 @@ description: "Pembahasan tentang sejarah lahirnya Bahasa Pemrograman C++"
 published: true
 tags:
   - c++
-  - coding
 ---
-
-# Pejelasan dan Pengenalan Bahasa C++
 
 Halo, kali ini kita akan belajar mengenai bahasa pemrograman yang cukup populer yaitu bahasa C++, bagi kalian yang jurusan IT mungkin sudah tidak asing dengan bahasa ini. Bahasa C++ merupakan Bahasa yang wajib kita pelajari baik pada waktu SMK maupun Kuliah, dulu waktu SMK saya pun juga dituntut untuk belajar bahasa C++, mungkin karena jurusan saya yang berkaitan dengan Pemrograman, jadi yaa mau tidak mau harus belajar bahasa ini 😅.
 
@@ -69,6 +66,8 @@ Setelah program (file `.exe` atau `.o`) terbentuk, file tersebut dapat dieksekus
 Untuk menjalankan sebuah program pastinya kita harus menulis struktur kodenya terlebih dahulu, setelah itu baru kita menjalankanya _(Run)_, di bahasa C++ juga memiliki struktur kode untuk menjalankan sebuah program, berikut adalah struktur C++
 
 ```cpp
+// Struktur program bahasa C++
+
 #include <iostream>
 using namespace std;
 
@@ -93,6 +92,8 @@ Jika kita lihat sekilas memang strukturnya hampir sama dengan bahasa C 🤔, itu
 Berikut adalah struktur program bahasa C
 
 ```c
+// Struktur program bahasa C
+
 #include <stdio.h>
 
 int main(void){
@@ -104,4 +105,6 @@ int main(void){
 }
 ```
 
-Mungkin sekian dulu penjelasan mengenai Bahasa C++, jika ada yang ingin ditanyakan silahkan bisa berkomentar, sampai jumpa di pembahasan selanjutnya 👋
+Mungkin sekian dulu penjelasan mengenai **Pengenalan C++**, jika ada yang ingin ditanyakan silahkan bisa berkomentar, dan sampai jumpa di pembahasan selanjutnya 👋
+
+
