@@ -28,6 +28,9 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
       <Box
         width="100%"
         transition="0.2s ease-out"
+        borderWidth={2}
+        borderRadius={24}
+        borderColor="cardBorder"
         _hover={{
           transform: "scale(1.03, 1.03)",
         }}
@@ -40,19 +43,6 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
           alignItems="center"
           width="100%"
         >
-          <AspectRatio
-            width="full"
-            ratio={2 / 1}
-            marginBottom={4}
-            boxShadow="lg"
-            borderRadius={{ base: 12, md: 24 }}
-          >
-            <Image
-              src={unsplashImg(postData.cover)}
-              fit="cover"
-              borderRadius={10}
-            />
-          </AspectRatio>
           
           <Box flexBasis={["90%"]} paddingLeft={[11, 22]}>
             <Heading size="lg" marginBottom={2}>

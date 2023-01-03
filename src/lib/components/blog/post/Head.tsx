@@ -27,15 +27,16 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
               name="4ndrexyz"
             />
 
-            <Stack direction={'column'} spacing={0}>
+            <Stack direction={'column'} spacing={0} marginBottom={5}>
               <Text fontSize={'sm'} fontWeight={600}>4ndrexyz</Text>
               <Text fontSize={'sm'} color={'gray.500'}>{dateFormatLong(postData.date)} • {postData.readTime?.text}</Text>
             </Stack>
           </Stack>
           
-          <ShareButtons title={`Check out this blog post: ${postData.title}`} />
+          <ShareButtons title={`Check out this blog post: ${postData.title}`} mb={5}/>
           
-          <Divider />
+          <Divider/>
+
         </Box>
       </Flex>
     </Grid>
