@@ -27,6 +27,9 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
     <MotionBox {...wrapperProps}>
       <Box
         width="100%"
+        borderWidth="2px"
+        borderRadius={12}
+        p={5}
         transition="0.2s ease-out"
         _hover={{
           transform: "scale(1.03, 1.03)",
@@ -59,7 +62,7 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
               {postData.title}
             </Heading>
             <Text fontSize="sm">
-              {dateFormatLong(postData.date)} - {postData.readTime?.text}
+              {dateFormatLong(postData.date)} • {postData.readTime?.text}
             </Text>
           </Box>
         </Flex>
