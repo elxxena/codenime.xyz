@@ -33,8 +33,10 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
             </Stack>
           </Stack>
           
-          <ShareButtons title={`Check out this blog post: ${postData.title}`} mb={5}/>
-          
+          <Stack marginBottom={5}>
+            <ShareButtons title={`Check out this blog post: ${postData.title}`}/>
+          </Stack>
+
           <Divider/>
 
         </Box>
