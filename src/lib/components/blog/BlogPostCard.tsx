@@ -38,7 +38,7 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
     <MotionBox {...wrapperProps}>
       <Box
         width="100%"
-        height={800}
+        height={500}
         transition="0.2s ease-out"
         _hover={{
           transform: "scale(1.03, 1.03)",
@@ -74,6 +74,10 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
               fontFamily={'body'}>
               {postData.title}
             </Heading>
+
+            <Text color={'gray.500'}>
+              {postData.description}
+            </Text>
 
             <Flex gap={2}>
               {postData.tags?.map((stack) => (

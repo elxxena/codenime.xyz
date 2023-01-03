@@ -1,7 +1,7 @@
 import { Heading, Box, Text, Button } from "@chakra-ui/react";
 import * as React from "react";
 
-import BlogPostCard from "lib/components/blog/BlogPostCard";
+import BlogPostCard from "lib/components/blog/BlogPostPreview";
 import MotionGrid from "lib/components/motion/MotionGrid";
 import {
   childAnimationProps,
