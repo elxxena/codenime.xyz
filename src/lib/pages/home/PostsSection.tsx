@@ -33,7 +33,7 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
     <Box mb={10}>
 
       <Heading size="lg" marginBottom={2}>
-        Recent Posts
+        Recent Blog
       </Heading>
 
       <MotionGrid
@@ -61,7 +61,7 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
           variant='ghost'
           onClick={handleClickViewAllPosts}
         >
-          View All Posts
+          View All Blog
         </Button>
       </Box>
 

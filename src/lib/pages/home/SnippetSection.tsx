@@ -44,7 +44,7 @@ const SnippetsList = ({ snippets }: SnippetListProps) => {
     <Box mt={10}>
 
       <Heading size="lg" marginBottom={2}>
-        Recent Snippet
+        Recent Snippet's
       </Heading>
 
       <MotionGrid

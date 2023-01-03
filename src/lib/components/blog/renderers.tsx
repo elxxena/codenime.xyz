@@ -23,11 +23,11 @@ export const renderers: Options["components"] = {
     const toastId = childrenValue.substring(0, 10);
 
     return !inline && match ? (
-      <Box width="100%" mb={7}>
+      <Box width="100%" mb={8}>
         <SyntaxHighlighter
           language={language}
           style={dracula}
-          showLineNumbers={false}
+          showLineNumbers={true}
         >
           {childrenValue}
         </SyntaxHighlighter>

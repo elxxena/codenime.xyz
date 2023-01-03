@@ -1,9 +1,8 @@
 ---
 title: Pengenalan C++
 date: "2022-12-10"
-cover: https://i.postimg.cc/Qtk245Nn/1-Pengenalan-C-01.jpg
+cover: https://i.postimg.cc/YSK1tXTQ/Pengenalan-CPP-Pengenalan-C.jpg
 legacyID: "2022-12-10-pengenalan-c++"
-thumbnail: "💻"
 description: "Pembahasan tentang sejarah lahirnya Bahasa Pemrograman C++"
 published: true
 tags:
@@ -80,7 +79,6 @@ int main(){
 }
 ```
 
-
 > **Penjelasan Kode Diatas**
 >
 > `<iostream>` : File header yang digunakan untuk proses _input/output._
@@ -106,7 +104,6 @@ int main(void){
 
 }
 ```
-
 
 Mungkin sekian dulu penjelasan mengenai **Pengenalan C++**, jika ada yang ingin ditanyakan silahkan bisa berkomentar, dan sampai jumpa di pembahasan selanjutnya 👋
 

@@ -22,15 +22,15 @@ const BlogPost = ({ postData }: BlogPostProps) => {
 
       <AspectRatio
         width="full"
-        ratio={3 / 1}
+        ratio={3 / 2}
         marginBottom={8}
         boxShadow="lg"
-        borderRadius={{ base: 12, md: 24 }}
+        borderRadius={{ base: 12, md: 20 }}
       >
         <Image
           src={unsplashImg(postData.cover, 2160)}
           fit="cover"
-          borderRadius={{ base: 12, md: 24 }}
+          borderRadius={{ base: 12, md: 20 }}
         />
       </AspectRatio>
 
