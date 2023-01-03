@@ -36,7 +36,7 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
 
   return (
     <MotionBox {...wrapperProps}>
-      <Link href={`/blog/${postData.id}`} unstyled>
+      <Link href={`/blog/${postData.id}`}>
       <HStack
         w="100%"
         // spacing={8}
