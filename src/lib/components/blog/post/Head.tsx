@@ -20,20 +20,20 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
             {postData.title}
           </Heading>
 
-          <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
+          <Stack mt={6} direction={'row'} spacing={4} align={'center'} marginBottom={5}>
 
             <Avatar
               src={'https://avatars.githubusercontent.com/4ndrexyz'}
               name="4ndrexyz"
             />
 
-            <Stack direction={'column'} spacing={0} marginBottom={5}>
+            <Stack direction={'column'} spacing={0} >
               <Text fontSize={'sm'} fontWeight={600}>4ndrexyz</Text>
               <Text fontSize={'sm'} color={'gray.500'}>{dateFormatLong(postData.date)} • {postData.readTime?.text}</Text>
             </Stack>
           </Stack>
-          
-          <Stack marginBottom={5}>
+
+          <Stack marginBottom={7}>
             <ShareButtons title={`Check out this blog post: ${postData.title}`}/>
           </Stack>
 
