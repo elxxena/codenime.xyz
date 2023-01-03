@@ -21,6 +21,7 @@ const DocumentMeta = () => {
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="theme-color" content="#444444" />
 
+      <meta name="description" content="Tempat yang cocok bagi kamu yang ingin belajar bahasa pemrograman"/>
       <link rel="manifest" href="/manifest.json" />
 
       {/* umami self-hosted analytics */}

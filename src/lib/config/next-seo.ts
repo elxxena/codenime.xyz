@@ -3,14 +3,14 @@ import type { DefaultSeoProps } from "next-seo";
 // https://github.com/garmeeh/next-seo#nextseo-options
 export const defaultSEOConfig: DefaultSeoProps = {
   title: "codenime",
-  titleTemplate: "%s",
+  titleTemplate: "%s | codenime",
   defaultTitle: "codenime",
-  description: "By 4ndrexyz",
+  description: "Tempat yang cocok bagi kamu yang ingin belajar bahasa pemrograman",
   canonical: "https://codenime.xyz",
   openGraph: {
     url: "https://codenime.xyz",
     title: "codenime",
-    description: "Web For Dev",
+    description: "Tempat yang cocok bagi kamu yang ingin belajar bahasa pemrograman",
     images: [
       {
         url: "https://og.sznm.dev/api/generate?heading=Andre%20Firmansah&text=codenime.xyz",
