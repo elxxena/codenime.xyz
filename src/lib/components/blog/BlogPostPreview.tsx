@@ -30,11 +30,10 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
         padding={8}
         height="full"
         transition="0.2s ease-out"
-        borderRadius={24}
+        borderRadius={18}
         borderColor="cardBorder"
-        _hover={{
-          transform: "scale(1.03, 1.03)",
-        }}
+        borderWidth="2px"
+        _hover={{ transform: "translateY(-4px)", shadow: "lg" }}
       >
         <Flex
           as={Link}
