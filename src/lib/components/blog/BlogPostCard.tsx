@@ -39,9 +39,7 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
       <Box
         width="100%"
         transition="0.2s ease-out"
-        _hover={{
-          transform: "scale(1.03, 1.03)",
-        }}
+        _hover={{ transform: "translateY(-4px)", shadow: "lg" }}
         borderWidth="2px"
         borderRadius={12}
         p={5}

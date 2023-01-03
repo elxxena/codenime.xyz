@@ -66,7 +66,7 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
       <BlogPostSearch keyword={keyword} onChange={handleChangeKeyword()} />
 
       <MotionGrid
-        gap={6}
+        gap={7}
         marginY={12}
         gridTemplateColumns={{ md: "repeat(2, 1fr)" }}
         {...staggerAnimationProps}
