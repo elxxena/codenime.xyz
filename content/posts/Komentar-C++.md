@@ -6,8 +6,8 @@ legacyID: "2022-12-30-komentar-cpp"
 description: "Mengenal komentar, bagian terpenting dalam bahasa pemrograman"
 published: true
 tags:
-  - c++
-  - komentar
+  - Tutorial
+  - C++
 ---
 
 Dalam proses pengembangan sebuah program, tentunya kita akan disibukkan dengan penulisan kode-kode yang begitu banyak dan tampak rumit sehinnga akan sulit dipahami oleh orang lain. Untuk menangani masalah ini, sebagai seorang _Programmer_ kita sebaiknya menambahkan komentar untuk menjelaskan algoritma dan keterangan - keterangan yang diperlukan dalam program.

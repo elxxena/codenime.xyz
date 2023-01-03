@@ -1,15 +1,4 @@
-import { Box,
-  VStack,
-  Text,
-  useColorModeValue,
-  Tag,
-  HStack,
-  AspectRatio,
-  Image,
-  Icon,
-  Divider,
-  Center,
-  Heading, } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, AspectRatio, Image } from "@chakra-ui/react";
 import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
 
@@ -36,53 +25,45 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
 
   return (
     <MotionBox {...wrapperProps}>
-      <Link href={`/blog/${postData.id}`}>
-      <HStack
-        w="100%"
-        // spacing={8}
-        rounded="lg"
-        borderWidth="1px"
-        bg={useColorModeValue("white", "neutralD.100")}
-        borderColor={useColorModeValue("neutral.400", "neutralD.400")}
-        position="relative"
-        align="center"
-        px={4}
-        p={4}
-        spacing={4}
-        transition="all 0.3s"
-        transition-timing-function="spring(1 100 10 10)"
-        _hover={{ transform: "translateY(-4px)", shadow: "lg" }}
-        height="100%"
-        // height={48}
+      <Box
+        width="100%"
+        transition="0.2s ease-out"
+        _hover={{
+          transform: "scale(1.03, 1.03)",
+        }}
       >
-        <VStack
-          align="start"
-          justifyContent="space-between"
-          w="100%"
-          h="100%"
-          p={2}
+        <Flex
+          as={Link}
+          href={`/blog/${postData.id}`}
+          onClick={handleClickBlogPost}
+          flexWrap="wrap"
+          alignItems="center"
+          width="100%"
         >
-          <VStack align="start">
-            <HStack>
-              <Heading fontSize="xl" borderBottom="0">
-                {postData.title}
-              </Heading>
-            </HStack>
-          </VStack>
-          <HStack
-            fontSize="sm"
-            fontWeight="500"
-            spacing={2}
-            color={useColorModeValue("neutral.900", "neutralD.900")}
+          <AspectRatio
+            width="full"
+            ratio={2 / 1}
+            marginBottom={4}
+            boxShadow="lg"
+            borderRadius={{ base: 12, md: 24 }}
           >
-            <Text>Posted {dateFormatLong(postData.date)}</Text>
-            <Text>·</Text>
-            {postData.readTime?.text}
-          </HStack>
-        </VStack>
-        {}
-      </HStack>
-    </Link>
+            <Image
+              src={unsplashImg(postData.cover)}
+              fit="cover"
+              borderRadius={10}
+            />
+          </AspectRatio>
+          
+          <Box flexBasis={["90%"]} paddingLeft={[11, 22]}>
+            <Heading size="lg" marginBottom={2}>
+              {postData.title}
+            </Heading>
+            <Text fontSize="sm">
+              {dateFormatLong(postData.date)} - {postData.readTime?.text}
+            </Text>
+          </Box>
+        </Flex>
+      </Box>
     </MotionBox>
   );
 };

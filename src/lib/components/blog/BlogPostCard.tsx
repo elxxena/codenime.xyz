@@ -9,7 +9,7 @@ import {
   Stack,
   Avatar,
   useColorModeValue,
-  Tag, } from "@chakra-ui/react";
+  Badge, } from "@chakra-ui/react";
 import type { Blog } from "contentlayer/generated";
 import Link from "next/link";
 
@@ -38,6 +38,7 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
     <MotionBox {...wrapperProps}>
       <Box
         width="100%"
+        height={100}
         transition="0.2s ease-out"
         _hover={{
           transform: "scale(1.03, 1.03)",
@@ -74,15 +75,11 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
               {postData.title}
             </Heading>
 
-            <Text color={'gray.500'}>
-              {postData.description}
-            </Text>
-
             <Flex gap={2}>
               {postData.tags?.map((stack) => (
-                <Tag key={stack} >
+                <Badge colorScheme='green' key={stack} >
                   {stack}
-                </Tag>
+                </Badge>
               ))}
             </Flex>
           </Stack>

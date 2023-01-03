@@ -7,7 +7,8 @@ thumbnail: "💻"
 description: "Pembahasan tentang sejarah lahirnya Bahasa Pemrograman C++"
 published: true
 tags:
-  - c++
+  - Tutorial
+  - C++
 ---
 
 Halo, kali ini kita akan belajar mengenai bahasa pemrograman yang cukup populer yaitu bahasa C++, bagi kalian yang jurusan IT mungkin sudah tidak asing dengan bahasa ini. Bahasa C++ merupakan Bahasa yang wajib kita pelajari baik pada waktu SMK maupun Kuliah, dulu waktu SMK saya pun juga dituntut untuk belajar bahasa C++, mungkin karena jurusan saya yang berkaitan dengan Pemrograman, jadi yaa mau tidak mau harus belajar bahasa ini 😅.
