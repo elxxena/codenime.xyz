@@ -37,10 +37,8 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
       </Heading>
 
       <MotionGrid
-        gap={14}
-        marginY={12}
-        gridTemplateRows={{ md: "repeat(2, 1fr)" }}
-        {...staggerAnimationProps}
+         gap={6}
+         gridTemplateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
       >
         {!filteredPosts.length && <Text>No posts found.</Text>}
         {filteredPosts.map((postData) => (

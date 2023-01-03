@@ -66,10 +66,8 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
       <BlogPostSearch keyword={keyword} onChange={handleChangeKeyword()} />
 
       <MotionGrid
-        gap={16}
-        marginY={12}
-        gridTemplateColumns={{ md: "repeat(2, 1fr)" }}
-        {...staggerAnimationProps}
+         gap={6}
+         gridTemplateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
       >
         {!filteredPosts.length && <Text>No posts found.</Text>}
         {filteredPosts.map((postData) => (
