@@ -27,9 +27,6 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
     <MotionBox {...wrapperProps}>
       <Box
         width="100%"
-        borderWidth="2px"
-        borderRadius={12}
-        p={5}
         transition="0.2s ease-out"
         _hover={{
           transform: "scale(1.03, 1.03)",

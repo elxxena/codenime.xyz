@@ -23,7 +23,7 @@ export const renderers: Options["components"] = {
     const toastId = childrenValue.substring(0, 10);
 
     return !inline && match ? (
-      <Box width="100%">
+      <Box width="100%" mb={4}>
         <SyntaxHighlighter
           language={language}
           style={dracula}

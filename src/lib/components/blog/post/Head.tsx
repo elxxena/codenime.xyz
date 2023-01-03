@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Heading, Link, Text, Tag, Stack, Avatar } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Link, Text, Tag, Stack, Avatar, Divider } from "@chakra-ui/react";
 
 import type { Blog } from "contentlayer/generated";
 
@@ -29,9 +29,13 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
 
             <Stack direction={'column'} spacing={0}>
               <Text fontSize={'sm'} fontWeight={600}>4ndrexyz</Text>
-              <Text fontSize={'xm'} color={'gray.500'}>{dateFormatLong(postData.date)} • {postData.readTime?.text}</Text>
+              <Text fontSize={'sm'} color={'gray.500'}>{dateFormatLong(postData.date)} • {postData.readTime?.text}</Text>
             </Stack>
           </Stack>
+          
+          <ShareButtons title={`Check out this blog post: ${postData.title}`} />
+          
+          <Divider />
         </Box>
       </Flex>
     </Grid>
