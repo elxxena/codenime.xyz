@@ -22,15 +22,15 @@ const BlogPost = ({ postData }: BlogPostProps) => {
 
       <AspectRatio
         width="full"
-        ratio={3 / 2}
+        ratio={2 / 1}
         marginBottom={8}
         boxShadow="lg"
-        borderRadius={{ base: 12, md: 20 }}
+        borderRadius={{ base: 12, md: 18 }}
       >
         <Image
           src={unsplashImg(postData.cover, 2160)}
           fit="cover"
-          borderRadius={{ base: 12, md: 20 }}
+          borderRadius={{ base: 12, md: 18 }}
         />
       </AspectRatio>
 
@@ -44,7 +44,7 @@ const BlogPost = ({ postData }: BlogPostProps) => {
         {postData.body.raw}
       </ReactMarkdown>
 
-      <ShareButtons title={`Check out this blog post: ${postData.title}`} />
+      <ShareButtons title={`Website codenime: ${postData.title}`} />
 
       <Box marginY={12}>
         <Giscus

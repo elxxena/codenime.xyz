@@ -17,11 +17,11 @@ Dalam proses pengembangan sebuah program, tentunya kita akan disibukkan dengan p
 Komentar adalah bagian dari kode program yang **tidak ikut dibaca** pada saat proses kompilasi.
 Dengan kata lain, komentar tidak akan mempengaruhi jalannya sebuah program.
 
-Didalam bahasa C++ sendiri kometar dibagi menjadi 2 jenis yaitu komentar satu baris dan komentar beberapa baris. Berikut adalah contoh komentar di bahasa C++
+Didalam bahasa C++ sendiri kometar dibagi menjadi 2 jenis yaitu komentar _one-line_ dan komentar _multi-line_. Berikut adalah contoh komentar di bahasa C++
 
 ### Menggunakan tanda '//'
 
-Tanda '//' digunakan untuk menuliskan komentar satu baris, komentar ini hanya tersedia untuk bahasa C++ saja, sedangkan untuk bahasa C tidak tersedia. Berikut adalah penggunaan Komentar satu baris.
+Tanda '//' digunakan untuk menuliskan komentar , komentar ini hanya tersedia untuk bahasa C++ saja, sedangkan untuk bahasa C tidak tersedia. Berikut adalah penggunaan Komentar satu baris.
 
 ```cpp
 // Hai, ini adalah komentar satu baris
@@ -51,7 +51,7 @@ int x; // Mendeklarasikan variabel berupa bilangan X;
 
 ### Menggunakan tanda '/* ... */'
 
-Berbeda dengan tanda '//', tanda ini dapat digunakan untuk menuliskan komentar yang banyaknya satu baris atau lebih. Komentar ini dimulai dengan tanda "'/*'" sampai ditemukan tanda "'*/'"
+Berbeda dengan tanda '//', tanda ini dapat digunakan untuk menuliskan komentar yang banyaknya satu baris atau lebih. Komentar ini dimulai dengan tanda `/*` sampai ditemukan tanda `*/`
 
 ```cpp
 /* Ini adalah komentar yang banyaknya satu baris */
@@ -75,6 +75,9 @@ Namun perlu diperhatikan bahwa kita tidak dapat membuat komentar yang bersarang 
 
 Apabila kita amati penulisan komentar di atas terlihat "Benar", namun apabila ditinjau dari sisi program, hal ini jelas "Salah".
 
-Alasannya adalah karena tanda "'*/'" yang ditemukan pertama kali akan dianggap sebagai penutup tanda "'/*'" pertama.
+Alasannya adalah karena tanda `*/` yang ditemukan pertama kali akan dianggap sebagai penutup tanda `/*` pertama.
 
-Mungkin sekian dulu penjelasan mengenai **Komentar pada C++**, jika ada yang ingin ditanyakan silahkan bisa berkomentar, dan sampai jumpa di pembahasan selanjutnya 👋
+Untuk memahami mengenai komentar pada C++ lebih lanjut kalian dapat mengunjungi referensi berikut
+> [Comments C++](https://learn.microsoft.com/en-us/cpp/cpp/comments-cpp?view=msvc-170)
+
+Sekian pembahasan kali ini, semoga membantu!

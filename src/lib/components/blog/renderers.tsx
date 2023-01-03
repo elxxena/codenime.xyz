@@ -27,7 +27,7 @@ export const renderers: Options["components"] = {
         <SyntaxHighlighter
           language={language}
           style={dracula}
-          showLineNumbers={true}
+          showLineNumbers={false}
         >
           {childrenValue}
         </SyntaxHighlighter>
