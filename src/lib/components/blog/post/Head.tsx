@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Heading, Link, Text, Tag } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Link, Text, Tag, Stack, Avatar } from "@chakra-ui/react";
 
 import type { Blog } from "contentlayer/generated";
 
@@ -15,34 +15,25 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
     <Grid gap={2} marginBottom={12}>
       <Flex alignItems="center">
         <Box flexBasis={["80%"]}>
+          
           <Heading as="h1" size="3xl" marginBottom={8}>
             {postData.title}
           </Heading>
 
-          <Flex gap={2}>
-            {postData.tags?.map((stack) => (
-              <Tag
-                marginBottom={5}
-                key={stack}
-              >
-                {stack}
-              </Tag>
-            ))}
-          </Flex>
+          <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
 
-          <Link href="/about" isExternal>
-            <Text color="gray" fontSize="sm">
-              4ndrexyz
-            </Text>
-          </Link>
+            <Avatar
+              src={'https://avatars.githubusercontent.com/4ndrexyz'}
+              name="4ndrexyz"
+            />
 
-          <Text fontSize="xs" color="gray">
-            {dateFormatLong(postData.date)} - {postData.readTime?.text}
-          </Text>
+            <Stack direction={'column'} spacing={0}>
+              <Text fontSize={'sm'} fontWeight={600}>4ndrexyz</Text>
+              <Text fontSize={'xm'} color={'gray.500'}>{dateFormatLong(postData.date)} • {postData.readTime?.text}</Text>
+            </Stack>
+          </Stack>
         </Box>
       </Flex>
-
-      <ShareButtons title={`Check out this blog post: ${postData.title}`} />
     </Grid>
   );
 };
