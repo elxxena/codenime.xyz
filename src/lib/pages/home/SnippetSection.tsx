@@ -48,7 +48,7 @@ const SnippetsList = ({ snippets }: SnippetListProps) => {
       </Heading>
 
       <MotionGrid
-        gap={16}
+        gap={6}
         marginY={12}
         gridTemplateColumns={{ md: "repeat(2, 1fr)" }}
         {...staggerAnimationProps}

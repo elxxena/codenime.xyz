@@ -30,7 +30,6 @@ const BlogPostPreview = ({ postData, wrapperProps }: BlogPostPreviewProps) => {
         padding={8}
         height="full"
         transition="0.2s ease-out"
-        borderWidth={2}
         borderRadius={24}
         borderColor="cardBorder"
         _hover={{
