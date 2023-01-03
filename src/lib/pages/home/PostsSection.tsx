@@ -1,7 +1,7 @@
-import { Heading, Box, Text, Button, SimpleGrid } from "@chakra-ui/react";
+import { Heading, Box, Text, Button } from "@chakra-ui/react";
 import * as React from "react";
 
-import BlogPostPreview from "lib/components/blog/BlogPostPreview";
+import BlogPostCard from "lib/components/blog/BlogPostCard";
 import MotionGrid from "lib/components/motion/MotionGrid";
 import {
   childAnimationProps,
@@ -36,16 +36,21 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
         Recent Posts
       </Heading>
 
-      <SimpleGrid columns={1} spacing={4} mt={8} w="100%">
+      <MotionGrid
+        gap={16}
+        marginY={12}
+        gridTemplateColumns={{ md: "repeat(2, 1fr)" }}
+        {...staggerAnimationProps}
+      >
         {!filteredPosts.length && <Text>No posts found.</Text>}
         {filteredPosts.map((postData) => (
-          <BlogPostPreview
+          <BlogPostCard
             wrapperProps={childAnimationProps}
             postData={postData}
             key={postData.title}
           />
         ))}
-      </SimpleGrid>
+      </MotionGrid>
             
       <Box>
         <Button

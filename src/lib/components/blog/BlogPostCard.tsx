@@ -38,7 +38,7 @@ const BlogPostCard = ({ postData, wrapperProps }: BlogPostCardProps) => {
     <MotionBox {...wrapperProps}>
       <Box
         width="100%"
-        height={100}
+        height={800}
         transition="0.2s ease-out"
         _hover={{
           transform: "scale(1.03, 1.03)",
