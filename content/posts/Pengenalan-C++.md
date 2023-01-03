@@ -1,7 +1,7 @@
 ---
 title: Pengenalan C++
 date: "2022-12-10"
-cover: https://i.postimg.cc/YSK1tXTQ/Pengenalan-CPP-Pengenalan-C.jpg
+cover: https://i.postimg.cc/Vsn7YQdv/Pengenalan-Pengenalan-C.jpg
 legacyID: "2022-12-10-pengenalan-c++"
 description: "Pembahasan tentang sejarah lahirnya Bahasa Pemrograman C++"
 published: true
