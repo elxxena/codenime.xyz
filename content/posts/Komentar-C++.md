@@ -54,7 +54,7 @@ int x; // Mendeklarasikan variabel berupa bilangan X;
 
 ### Menggunakan tanda '/* ... */'
 
-Berbeda dengan tanda '//', tanda ini dapat digunakan untuk menuliskan komentar yang banyaknya satu baris atau lebih. Komentar ini dimulai dengan tanda '/*' sampai ditemukan tanda '*/'
+Berbeda dengan tanda '//', tanda ini dapat digunakan untuk menuliskan komentar yang banyaknya satu baris atau lebih. Komentar ini dimulai dengan tanda "/*" sampai ditemukan tanda "*/"
 
 ```cpp
 /* Ini adalah komentar yang banyaknya satu baris */

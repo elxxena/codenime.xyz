@@ -1,7 +1,7 @@
 import { Heading, Box, Text, Button } from "@chakra-ui/react";
 import * as React from "react";
 
-import BlogPostCard from "lib/components/blog/BlogPostCard";
+import BlogPostPreview from "lib/components/blog/BlogPostPreview";
 import MotionGrid from "lib/components/motion/MotionGrid";
 import {
   childAnimationProps,
@@ -44,7 +44,7 @@ const BlogPostList = ({ allPostsData }: BlogPostListProps) => {
       >
         {!filteredPosts.length && <Text>No posts found.</Text>}
         {filteredPosts.map((postData) => (
-          <BlogPostCard
+          <BlogPostPreview
             wrapperProps={childAnimationProps}
             postData={postData}
             key={postData.title}

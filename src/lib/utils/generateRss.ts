@@ -32,7 +32,7 @@ export const generateRss = async (posts: Array<Blog>): Promise<string> => {
         guid: `https://codenime.xyz/blog/${item.id}`,
         url: `https://codenime.xyz/blog/${item.id}`,
         date: item.date,
-        description: "Web For learn Code",
+        description: "Web codenime.xyz",
         author: "4ndrexyz",
         custom_elements: [{ "content:encoded": item.contentHtml }],
       });
