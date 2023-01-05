@@ -44,7 +44,7 @@ const BlogPost = ({ postData }: BlogPostProps) => {
         {postData.body.raw}
       </ReactMarkdown>
 
-      <ShareButtons title={`Website codenime: ${postData.title}`} />
+      <ShareButtons title={`Kunjungi halaman codenime ${postData.title}`} />
 
       <Box marginY={12}>
         <Giscus
@@ -56,6 +56,7 @@ const BlogPost = ({ postData }: BlogPostProps) => {
           reactionsEnabled="1"
           theme={giscusTheme}
           emitMetadata="0"
+          data-loading="lazy"
         />
       </Box>
     </Box>

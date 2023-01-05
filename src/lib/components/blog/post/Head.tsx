@@ -34,7 +34,7 @@ const BlogPostHead = ({ postData }: BlogPostHeadProps) => {
           </Stack>
 
           <Stack marginBottom={7}>
-            <ShareButtons title={`Check out this blog post: ${postData.title}`}/>
+            <ShareButtons title={`Lihat postingan dari codenime ${postData.title}`}/>
           </Stack>
 
           <Divider/>
