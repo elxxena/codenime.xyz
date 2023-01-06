@@ -2,7 +2,7 @@
   <br>
   <img src="public/avatar_codenime.png" style="width:200px; height: 200px; text-align: center"/>
   <br>
-  <a href="codenime.xyz">codenime</a>
+  <a href="https://www.codenime.xyz/" target="_blank">codenime</a>
   <br>
 </h1>
 
